@@ -97,11 +97,21 @@ public class DBUtility {
         PreparedStatement preparedStatement = null;
         ResultSet resultset = null;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/docdirect", "root", "root");
+            System.out.println("Connecting to DB");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/DocDirectDB", "skt_pie", "12104053");
+            System.out.println("DB Connected");
             preparedStatement = connection.prepareStatement("SELECT * FROM users WHERE phonenumber=? AND password=?");
+            System.out.println("phonenumber: " + phonenumber);
+            System.out.println("password: " + password);
+
             preparedStatement.setString(1, phonenumber);
+            preparedStatement.setString(2, password);
+            System.out.println("I am here 1");
+
             resultset = preparedStatement.executeQuery();
+            System.out.println("I am here 2");
             if (!resultset.isBeforeFirst()) {
+                System.out.println("I am here 3");
                 System.out.println("User does not exist");
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setContentText("User does not exist");
@@ -111,6 +121,7 @@ public class DBUtility {
                     String retrievedPassword = resultset.getString("password");
                     if (retrievedPassword.equals(password)) {
                         changeScene(event, "LogOut.fxml", "Welcome", resultset.getString("name"));
+
                     } else {
                         System.out.println("Passwords did not match");
                         Alert alert = new Alert(Alert.AlertType.ERROR);

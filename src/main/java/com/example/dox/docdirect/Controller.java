@@ -20,23 +20,27 @@ public class Controller implements Initializable {
     private TextField tf_password;
     @FXML
     private TextField tf_phonenumber;
+
     @Override
-    public void initialize(URL location,ResourceBundle rb) {
+    public void initialize(URL location, ResourceBundle rb) {
         btn_login.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                DBUtility.logInUser(event,tf_phonenumber.getText(), tf_password.getText());
+                System.out.println("Login button clicked");
+                DBUtility.logInUser(event, tf_phonenumber.getText(), tf_password.getText());
                 // ...
             }
         });
+
         btn_signup.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-              DBUtility.changeScene(event, "Signup.fxml","Sign Up",null);
+                DBUtility.changeScene(event, "Signup.fxml", "Sign Up", null);
                 // ...
             }
         });
     }
+
 
     public void setUserInformation(String username) {
 
