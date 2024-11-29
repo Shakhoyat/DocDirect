@@ -43,6 +43,7 @@ public class DBUtility {
         PreparedStatement psCheckUserExists = null;
         ResultSet resultset = null;
         try {
+            // using database DocDirectDB
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/DocDirectDB", "skt_pie", "12104053");
             psCheckUserExists = connection.prepareStatement("SELECT * FROM users WHERE phonenumber=?");
