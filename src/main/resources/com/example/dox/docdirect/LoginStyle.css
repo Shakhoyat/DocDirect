@@ -1,0 +1,58 @@
+.root {
+    -fx-background-image: url("/home/skt_pie/IdeaProjects/DocDirect/src/main/resources/com/example/dox/docdirect"); /* Add your background image */
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-font-family: "Arial";
+}
+
+.login-pane {
+    -fx-background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    -fx-padding: 30;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-border-color: white;
+    -fx-border-width: 1.5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0.5, 0, 1);
+}
+
+.login-title {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0;
+}
+
+.login-field {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 8;
+    -fx-prompt-text-fill: gray;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+
+.radio-button {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.login-button {
+    -fx-background-color: #e53935;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0.5, 0, 1);
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    -fx-background-color: #d32f2f;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
