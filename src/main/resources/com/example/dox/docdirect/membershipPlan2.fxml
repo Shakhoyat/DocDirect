@@ -34,27 +34,28 @@
                         </ImageView>
                         <Label layoutX="34.0" layoutY="18.0" text="DocDirect" />
                         <Button layoutX="576.0" layoutY="14.0" mnemonicParsing="false" text="Book Appointment" />
-                  <Label layoutX="14.0" layoutY="96.0" text="Our membership plans cover the healthcare needs of you and your family. The plans allow &#10;you to access doctors as many times as you need for a one-time purchase to proactively&#10; manage your health, be it yearly or for a certain period. Membership plans also cover a &#10;set of tests especially tailored by experienced doctors to meet your healthcare needs." />
-                  <Label layoutX="17.0" layoutY="182.0" text="Annual Membership Plan" />
-                  <ImageView fitHeight="161.0" fitWidth="185.0" layoutX="22.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+                        <Label layoutX="14.0" layoutY="96.0" text="Our membership plans cover the healthcare needs of you and your family. The plans allow &#10;you to access doctors as many times as you need for a one-time purchase to proactively&#10; manage your health, be it yearly or for a certain period. Membership plans also cover a &#10;set of tests especially tailored by experienced doctors to meet your healthcare needs." />
+                        <Label layoutX="17.0" layoutY="182.0" text="Special Plan" />
+                        <Button layoutX="28.0" layoutY="389.0" mnemonicParsing="false" text="Buy Now" />
+                        <Button layoutX="115.0" layoutY="389.0" mnemonicParsing="false" text="Add to cart" />
+                        <Button layoutX="227.0" layoutY="389.0" mnemonicParsing="false" text="Buy Now" />
+                        <Button layoutX="312.0" layoutY="389.0" mnemonicParsing="false" text="Add to cart" />
+                        <Button layoutX="443.0" layoutY="389.0" mnemonicParsing="false" text="Buy Now" />
+                        <Button layoutX="526.0" layoutY="389.0" mnemonicParsing="false" text="Add to cart" />
+                        <Button layoutX="649.0" layoutY="245.0" mnemonicParsing="false" text="Next" />
+                  <ImageView fitHeight="179.0" fitWidth="200.0" layoutX="31.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@annualMembership1.png" />
+                        <Image url="@specialPlan1.png" />
                      </image></ImageView>
-                  <ImageView fitHeight="173.0" fitWidth="222.0" layoutX="227.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="179.0" fitWidth="183.0" layoutX="229.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@AnnualMembership2.png" />
+                        <Image url="@specialplan2.png" />
                      </image></ImageView>
-                  <ImageView fitHeight="192.0" fitWidth="202.0" layoutX="431.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="195.0" fitWidth="200.0" layoutX="436.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@AnnualMembership3.png" />
+                        <Image url="@specialplan3.png" />
                      </image></ImageView>
-                  <Button layoutX="28.0" layoutY="389.0" mnemonicParsing="false" text="Buy Now" />
-                  <Button layoutX="115.0" layoutY="389.0" mnemonicParsing="false" text="Add to cart" />
-                  <Button layoutX="227.0" layoutY="389.0" mnemonicParsing="false" text="Buy Now" />
-                  <Button layoutX="312.0" layoutY="389.0" mnemonicParsing="false" text="Add to cart" />
-                  <Button layoutX="451.0" layoutY="387.0" mnemonicParsing="false" text="Buy Now" />
-                  <Button layoutX="533.0" layoutY="387.0" mnemonicParsing="false" text="Add to cart" />
-                  <Button layoutX="649.0" layoutY="245.0" mnemonicParsing="false" text="Next" />
                     </children>
                 </AnchorPane>
             </children>
