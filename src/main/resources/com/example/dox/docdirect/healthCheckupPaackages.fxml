@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.healthcheckuppackages">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane prefHeight="428.0" prefWidth="127.0">
+               <children>
+                  <Button layoutX="41.0" layoutY="74.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="41.0" layoutY="151.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="41.0" layoutY="214.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" text="Button" />
+                  <Button layoutX="41.0" layoutY="271.0" mnemonicParsing="false" text="Button" />
+                  <Button layoutX="41.0" layoutY="364.0" mnemonicParsing="false" text="Button" />
+               </children></AnchorPane>
+            <AnchorPane layoutX="130.0" prefHeight="428.0" prefWidth="709.0">
+               <children>
+                  <Label layoutX="8.0" layoutY="41.0" text="Health Checks and Packages">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="76.0" text="We believe everyone should have access to convenient,affordable, and high-quality healthcare. Our health&#10;checks and packages help you stay on top of your health no matter your age, gender, or needs. Choose the &#10;one that is right for you." />
+                  <Label layoutX="4.0" layoutY="148.0" text="Women Health Checks" />
+                  <ImageView fitHeight="190.0" fitWidth="210.0" layoutX="7.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@herHealth1.png" />
+                     </image></ImageView>
+                  <ImageView fitHeight="190.0" fitWidth="201.0" layoutX="226.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@herHealth2.png" />
+                     </image></ImageView>
+                  <ImageView fitHeight="190.0" fitWidth="196.0" layoutX="452.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@herHealth3.png" />
+                     </image></ImageView>
+                  <Button layoutX="24.0" layoutY="365.0" mnemonicParsing="false" text="Buy Now" />
+                  <Button layoutX="108.0" layoutY="365.0" mnemonicParsing="false" text="Add to Cart" />
+                  <Button layoutX="226.0" layoutY="366.0" mnemonicParsing="false" text="Buy Now" />
+                  <Button layoutX="307.0" layoutY="365.0" mnemonicParsing="false" text="Add to Cart" />
+                  <Button layoutX="460.0" layoutY="366.0" mnemonicParsing="false" text="Buy Now" />
+                  <Button layoutX="533.0" layoutY="366.0" mnemonicParsing="false" text="Add to Cart" />
+                  <Button layoutX="642.0" layoutY="391.0" mnemonicParsing="false" text="Next.." />
+                  <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="34.0" layoutY="18.0" text="DocDirect" />
+                  <Button layoutX="576.0" layoutY="14.0" mnemonicParsing="false" text="Book Appointment" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
