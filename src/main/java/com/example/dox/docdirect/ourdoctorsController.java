@@ -1,4 +1,4 @@
 package com.example.dox.docdirect;
 
-public class OurDoctors {
+public class ourdoctorsController {
 }

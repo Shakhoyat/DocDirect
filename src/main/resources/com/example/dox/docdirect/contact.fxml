@@ -8,60 +8,68 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.consultation">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FDFEFE;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.ConsultationController">
     <children>
-        <AnchorPane layoutX="-5.0" prefHeight="449.0" prefWidth="133.0">
+        <!-- Left Sidebar -->
+        <AnchorPane prefHeight="600.0" prefWidth="150.0" style="-fx-background-color: #F8BBD0;">
             <children>
-                <Button layoutX="44.0" layoutY="62.0" mnemonicParsing="false" text="Button" />
-                <Button layoutX="44.0" layoutY="112.0" mnemonicParsing="false" text="Button" />
-                <Button layoutX="44.0" layoutY="163.0" mnemonicParsing="false" text="Button" />
-                <Button layoutX="44.0" layoutY="214.0" mnemonicParsing="false" text="Button" />
-                <Button layoutX="44.0" layoutY="270.0" mnemonicParsing="false" text="Button" />
-            </children></AnchorPane>
-        <AnchorPane layoutX="135.0" prefHeight="400.0" prefWidth="473.0">
+                <Button fx:id="homeButton" layoutX="10.0" layoutY="80.0" mnemonicParsing="false"
+                        style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-weight: bold;" text="Home" prefWidth="130.0" />
+                <Button fx:id="ourDoctorsButton" layoutX="10.0" layoutY="130.0" mnemonicParsing="false"
+                        style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-weight: bold;" text="Our Doctors" prefWidth="130.0" />
+                <Button fx:id="servicesButton" layoutX="10.0" layoutY="180.0" mnemonicParsing="false"
+                        style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-weight: bold;" text="Services" prefWidth="130.0" />
+                <Button fx:id="aboutButton" layoutX="10.0" layoutY="230.0" mnemonicParsing="false"
+                        style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-weight: bold;" text="About" prefWidth="130.0" />
+                <Button fx:id="contactButton" layoutX="10.0" layoutY="280.0" mnemonicParsing="false"
+                        style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-weight: bold;" text="Contact" prefWidth="130.0" />
+            </children>
+        </AnchorPane>
+
+        <!-- Main Content Area -->
+        <AnchorPane layoutX="160.0" prefHeight="600.0" prefWidth="640.0" style="-fx-background-color: #FFFFFF;">
             <children>
-                <Label layoutX="7.0" layoutY="47.0">
-                    <font>
-                        <Font size="14.0" />
-                    </font></Label>
-                <Button layoutX="398.0" layoutY="14.0" mnemonicParsing="false" text="Book Appointment" />
-                <ImageView fitHeight="35.0" fitWidth="32.0" layoutX="5.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                <!-- Header -->
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@logo.png" />
                     </image>
                 </ImageView>
-                <Label layoutX="37.0" layoutY="18.0" text="DocDirect" />
-            <ImageView fitHeight="99.0" fitWidth="510.0" layoutX="11.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@getIntouchwithUs.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="37.0" layoutY="136.0" text="Email" />
-            <Label layoutX="181.0" layoutY="136.0" />
-            <Label layoutX="221.0" layoutY="136.0" text="Whatsapp" />
-            <Label layoutX="398.0" layoutY="136.0" text="Address" />
-            <Label layoutY="161.0" text="support@docdirectskt.com" />
-            <Label layoutX="212.0" layoutY="161.0" text="01303****07" />
-            <Label layoutX="348.0" layoutY="161.0" text="Plot 9, Road 17, Block C, &#10;Banani, Dhaka 1213, &#10;Bangladesh" textAlignment="CENTER" />
-            <Label layoutX="167.0" layoutY="215.0" text="SEND US A MESSAGE">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
-            <AnchorPane layoutX="-1.0" layoutY="249.0" prefHeight="200.0" prefWidth="531.0">
-               <children>
-                  <Label layoutX="8.0" layoutY="48.0" text="Name:" />
-                  <TextField layoutX="69.0" layoutY="44.0" prefHeight="26.0" prefWidth="165.0" promptText="Type Name" />
-                  <Label layoutX="245.0" layoutY="48.0" text="Phone Number:" />
-                  <TextField layoutX="342.0" layoutY="44.0" prefHeight="26.0" prefWidth="172.0" promptText="Type Phone Number" />
-                  <Label layoutX="10.0" layoutY="82.0" text="Email:" />
-                  <TextField layoutX="70.0" layoutY="78.0" prefHeight="26.0" prefWidth="447.0" promptText="Type Email Address" />
-                  <Label layoutY="131.0" text="Message:" />
-                  <TextField layoutX="69.0" layoutY="113.0" prefHeight="54.0" prefWidth="438.0" promptText="Write Description" />
-                  <Button layoutX="214.0" layoutY="173.0" mnemonicParsing="false" text="Submit" />
-                  <Label layoutX="32.0" text="Just leave us your details here and we will get back to you within a few hours" />
-               </children>
-            </AnchorPane>
+                <Label layoutX="70.0" layoutY="20.0" text="DocDirect" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #EC407A;" />
+                <Button fx:id="bookAppointmentButton" layoutX="500.0" layoutY="15.0" mnemonicParsing="false"
+                        style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-weight: bold;" text="Book Appointment" />
+
+                <!-- Contact Details Section -->
+                <ImageView fitHeight="100.0" fitWidth="600.0" layoutX="20.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@getIntouchwithUs.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="50.0" layoutY="180.0" text="Email: support@docdirectskt.com" style="-fx-font-size: 14px;" />
+                <Label layoutX="250.0" layoutY="180.0" text="WhatsApp: 01303****07" style="-fx-font-size: 14px;" />
+                <Label layoutX="450.0" layoutY="180.0" text="Address: Plot 9, Road 17, Block C, Banani, Dhaka 1213"
+                       style="-fx-font-size: 14px;" wrapText="true" />
+
+                <!-- Send Message Section -->
+                <Label layoutX="220.0" layoutY="220.0" text="SEND US A MESSAGE" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #EC407A;" />
+                <AnchorPane layoutX="20.0" layoutY="260.0" prefHeight="250.0" prefWidth="600.0" style="-fx-background-color: #FCE4EC; -fx-border-color: #EC407A; -fx-border-radius: 10px; -fx-border-width: 2;">
+                    <children>
+                        <Label layoutX="20.0" layoutY="20.0" text="Name:" />
+                        <TextField fx:id="nameField" layoutX="100.0" layoutY="16.0" prefWidth="450.0" promptText="Type your name here" />
+
+                        <Label layoutX="20.0" layoutY="60.0" text="Phone Number:" />
+                        <TextField fx:id="phoneField" layoutX="100.0" layoutY="56.0" prefWidth="450.0" promptText="Type your phone number here" />
+
+                        <Label layoutX="20.0" layoutY="100.0" text="Email:" />
+                        <TextField fx:id="emailField" layoutX="100.0" layoutY="96.0" prefWidth="450.0" promptText="Type your email address here" />
+
+                        <Label layoutX="20.0" layoutY="140.0" text="Message:" />
+                        <TextField fx:id="messageField" layoutX="100.0" layoutY="136.0" prefHeight="50.0" prefWidth="450.0" promptText="Write your message here" />
+
+                        <Button fx:id="submitButton" layoutX="260.0" layoutY="200.0" mnemonicParsing="false"
+                                style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-weight: bold;" text="Submit" />
+                    </children>
+                </AnchorPane>
             </children>
         </AnchorPane>
     </children>
