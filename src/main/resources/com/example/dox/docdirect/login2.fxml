@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="482.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.Controller">
+<AnchorPane prefHeight="482.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.LoginController">
    <children>
       <ImageView fitHeight="485.0" fitWidth="391.0" layoutX="-30.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -32,8 +32,8 @@
             <TextField fx:id="tf_phonenumber" layoutX="34.0" layoutY="173.0" prefHeight="18.0" prefWidth="162.0" promptText="Type Phone Number" />
             <Label layoutX="34.0" layoutY="209.0" prefHeight="18.0" prefWidth="143.0" text="Enter your Password:" />
             <TextField fx:id="tf_password" layoutX="34.0" layoutY="243.0" prefHeight="18.0" prefWidth="162.0" promptText="Type Password" />
-            <Button fx:id="btn_login" layoutX="94.0" layoutY="293.0" mnemonicParsing="false" text="Login" />
-            <Button fx:id="btn_signup" layoutX="177.0" layoutY="331.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="81.0" text=" Register" />
+            <Button fx:id="btn_login" layoutX="94.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+            <Button fx:id="btn_signup" layoutX="177.0" layoutY="331.0" mnemonicParsing="false" onAction="#switchToSignUp" prefHeight="26.0" prefWidth="81.0" text=" Register" />
             <Label layoutX="27.0" layoutY="331.0" prefHeight="26.0" prefWidth="162.0" text="Don't have an account?" />
          </children>
       </AnchorPane>

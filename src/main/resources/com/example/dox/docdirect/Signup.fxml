@@ -50,7 +50,7 @@
             <Label layoutX="50.0" layoutY="369.0" text="Set Password:" />
             <DatePicker fx:id="dp_dateofbirth" layoutX="304.0" layoutY="329.0" promptText="Select Date" />
             <CheckBox fx:id="chkb_certify" layoutX="83.0" layoutY="442.0" mnemonicParsing="false" text="I hereby certify that all the above information is true" />
-            <Button fx:id="btn_signup" layoutX="243.0" layoutY="485.0" mnemonicParsing="false" text="SignUp" />
+            <Button fx:id="btn_signup" layoutX="243.0" layoutY="485.0" mnemonicParsing="false" onAction="#handleSignUp" text="SignUp" />
             <PasswordField fx:id="passfield" layoutX="44.0" layoutY="395.0" promptText="Enter your Password" />
          </children>
       </AnchorPane>
