@@ -36,7 +36,7 @@ public class DashboardController {
     @FXML
     private void initialize() {
         // Button action for "Home"
-        homeButton.setOnAction(event -> switchScene("dashboard.fxml", "Home"));
+       // homeButton.setOnAction(event -> switchScene("dashboard.fxml", "Home"));
 
         // Button action for "Services"
         servicesButton1.setOnAction(event -> switchScene("services.fxml", "Services"));

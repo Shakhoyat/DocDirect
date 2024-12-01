@@ -11,18 +11,18 @@
 <AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FDFEFE;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.ConsultationController">
     <children>
         <!-- Left Sidebar -->
-        <AnchorPane prefHeight="600.0" prefWidth="150.0" style="-fx-background-color: #F8BBD0;">
+        <AnchorPane prefHeight="600.0" prefWidth="150.0" style="-fx-background-color: #EC407A;">
             <children>
                 <Button fx:id="homeButton" layoutX="10.0" layoutY="80.0" mnemonicParsing="false"
-                        style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-weight: bold;" text="Home" prefWidth="130.0" />
+                        style="-fx-background-color: #FFFFFF; -fx-text-fill: #EC407A; -fx-font-weight: bold; -fx-background-radius: 20;" text="Home" prefWidth="130.0" />
                 <Button fx:id="ourDoctorsButton" layoutX="10.0" layoutY="130.0" mnemonicParsing="false"
-                        style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-weight: bold;" text="Our Doctors" prefWidth="130.0" />
+                        style="-fx-background-color: #FFFFFF; -fx-text-fill: #EC407A; -fx-font-weight: bold; -fx-background-radius: 20;" text="Our Doctors" prefWidth="130.0" />
                 <Button fx:id="servicesButton" layoutX="10.0" layoutY="180.0" mnemonicParsing="false"
-                        style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-weight: bold;" text="Services" prefWidth="130.0" />
+                        style="-fx-background-color: #FFFFFF; -fx-text-fill: #EC407A; -fx-font-weight: bold; -fx-background-radius: 20;" text="Services" prefWidth="130.0" />
                 <Button fx:id="aboutButton" layoutX="10.0" layoutY="230.0" mnemonicParsing="false"
-                        style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-weight: bold;" text="About" prefWidth="130.0" />
+                        style="-fx-background-color: #FFFFFF; -fx-text-fill: #EC407A; -fx-font-weight: bold; -fx-background-radius: 20;" text="About" prefWidth="130.0" />
                 <Button fx:id="contactButton" layoutX="10.0" layoutY="280.0" mnemonicParsing="false"
-                        style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-weight: bold;" text="Contact" prefWidth="130.0" />
+                        style="-fx-background-color: #FFFFFF; -fx-text-fill: #EC407A; -fx-font-weight: bold; -fx-background-radius: 20;" text="Contact" prefWidth="130.0" />
             </children>
         </AnchorPane>
 
