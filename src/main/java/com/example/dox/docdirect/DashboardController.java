@@ -2,9 +2,10 @@ package com.example.dox.docdirect;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -12,61 +13,76 @@ import java.io.IOException;
 public class DashboardController {
 
     @FXML
-    private Button homeButton;
-
-    @FXML
-    private Button servicesButton;
-
-    @FXML
-    private Button contactButton;
-
-    @FXML
     private Button aboutButton;
+
+    @FXML
+    private Button bookAppointmentButton;
+
+    @FXML
+    private Button contactbutton;
+
+    @FXML
+    private Button homeButton;
 
     @FXML
     private Button ourDoctorsButton;
 
     @FXML
-    private Button bookAppointmentButton;
+    private Button servicesButton1;
 
-    private void changeScene(String fxmlFileName) {
-        try {
-            // Get the current stage from any button (all are part of the same scene)
-            Stage stage = (Stage) homeButton.getScene().getWindow();
-            Parent root = FXMLLoader.load(getClass().getResource(fxmlFileName));
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+    @FXML
+    private Button servicesButton2;
 
     @FXML
     private void initialize() {
-        // Set button actions
-        homeButton.setOnAction(event -> {
-            // Stay on the same page, no action needed
-        });
+        // Button action for "Home"
+        homeButton.setOnAction(event -> switchScene("dashboard.fxml", "Home"));
 
-        servicesButton.setOnAction(event -> {
-            changeScene("service.fxml");
-        });
+        // Button action for "Services"
+        servicesButton1.setOnAction(event -> switchScene("services.fxml", "Services"));
 
-        contactButton.setOnAction(event -> {
-            changeScene("contact.fxml");
-        });
+        // Button action for "Our Doctors"
+        ourDoctorsButton.setOnAction(event -> switchScene("ourDoctors.fxml", "Our Doctors"));
 
-        aboutButton.setOnAction(event -> {
-            changeScene("about.fxml");
-        });
+        // Button action for "About"
+        aboutButton.setOnAction(event -> switchScene("about.fxml", "About"));
 
-        ourDoctorsButton.setOnAction(event -> {
-            changeScene("our_doctors.fxml");
-        });
+        // Button action for "Contact"
+        contactbutton.setOnAction(event -> switchScene("contact.fxml", "Contact"));
 
-        bookAppointmentButton.setOnAction(event -> {
-            changeScene("our_doctors.fxml");
-        });
+        // Button action for "Explore Our Services"
+        servicesButton2.setOnAction(event -> switchScene("services.fxml", "Explore Our Services"));
+
+        // Button action for "Book an Appointment"
+        bookAppointmentButton.setOnAction(event -> switchScene("ourDoctors.fxml", "Book an Appointment"));
+    }
+
+    private void switchScene(String fxmlFileName, String title) {
+        try {
+            // Load the FXML file
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlFileName));
+            AnchorPane root = fxmlLoader.load();
+
+            // Get the current stage
+            Stage stage = (Stage) homeButton.getScene().getWindow();
+
+            // Set the new scene
+            stage.setScene(new Scene(root));
+            stage.setTitle(title);
+
+            // Confirmation message
+            System.out.println(title + " scene loaded successfully!");
+        } catch (IOException e) {
+            e.printStackTrace();
+            showAlert(Alert.AlertType.ERROR, "Navigation Error", "Could not load the " + title + " scene.");
+        }
+    }
+
+    private void showAlert(Alert.AlertType alertType, String title, String content) {
+        Alert alert = new Alert(alertType);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(content);
+        alert.showAndWait();
     }
 }

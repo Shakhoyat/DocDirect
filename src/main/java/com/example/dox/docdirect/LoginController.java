@@ -1,10 +1,9 @@
 package com.example.dox.docdirect;
 
-
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -72,8 +71,7 @@ public class LoginController {
 
     private void switchToDashboard() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("dashboard.fxml"));
-            AnchorPane root = fxmlLoader.load();
+            Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
             Stage stage = (Stage) btn_login.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("Dashboard");
