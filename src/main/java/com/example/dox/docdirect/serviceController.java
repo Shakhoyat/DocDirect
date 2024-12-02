@@ -51,7 +51,7 @@ public class serviceController {
         About_btn.setOnAction(event -> switchScene(event, "about.fxml"));
         contact_btn.setOnAction(event -> switchScene(event, "contact.fxml"));
         btn_bookappointment.setOnAction(event -> switchScene(event, "ourDoctors.fxml"));
-        btn_consultations.setOnAction(event -> switchScene(event, "consultation1.fxml"));
+        btn_consultations.setOnAction(event -> switchScene(event, "consultation.fxml"));
         btn_health_checkupnPackages.setOnAction(event -> switchScene(event, "healthCheckupPaackages1.fxml"));
         btn_membershipPlans.setOnAction(event -> switchScene(event, "membershipPlan1.fxml"));
     }
