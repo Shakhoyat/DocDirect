@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="139.0" prefWidth="264.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.DoctorCardController">
+    <ImageView fx:id="doctorImage" fitWidth="100" preserveRatio="true" />
+    <Label fx:id="doctorName" style="-fx-font-size: 16; -fx-font-weight: bold;" text="Aziz Khan" />
+    <Label fx:id="doctorTitle" text="Medicie" />
+    <Label fx:id="doctorFee" text="150+ years" />
+    <Button fx:id="detailsButton" text="See Details" />
+</VBox>

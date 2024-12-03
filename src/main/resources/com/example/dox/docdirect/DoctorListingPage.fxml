@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.layout.GridPane?>
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.DoctorListingController">
+   <AnchorPane prefHeight="410.0" prefWidth="167.0">
+      <children>
+         <Button fx:id="home" layoutX="54.0" layoutY="45.0" mnemonicParsing="false" text="Home" />
+         <Button fx:id="services" layoutX="52.0" layoutY="115.0" mnemonicParsing="false" text="Services" />
+         <Button fx:id="doctor" layoutX="56.0" layoutY="179.0" mnemonicParsing="false" text="Our Doctors" />
+         <Button fx:id="about" layoutX="56.0" layoutY="249.0" mnemonicParsing="false" text="About" />
+         <Button fx:id="contact" layoutX="56.0" layoutY="316.0" mnemonicParsing="false" text="Contact" />
+      </children>
+   </AnchorPane>
+   <AnchorPane layoutX="167.0" layoutY="10.0" prefHeight="400.0" prefWidth="422.0">
+           <ScrollPane fitToWidth="true" fitToHeight="true" layoutX="10.0" layoutY="10.0" prefWidth="422.0">
+               <GridPane fx:id="doctorGrid" hgap="10" vgap="10" style="-fx-padding: 10;" />
+           </ScrollPane>
+   </AnchorPane>
+</AnchorPane>
