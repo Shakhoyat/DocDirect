@@ -47,7 +47,7 @@ public class serviceController {
     private void initialize() {
         home_btn.setOnAction(event -> switchScene(event, "dashboard.fxml"));
         service_btn.setOnAction(event -> switchScene(event, "services.fxml"));
-        ourDoctors_btn.setOnAction(event -> switchScene(event, "ourDoctors.fxml"));
+        ourDoctors_btn.setOnAction(event -> switchScene(event, "DoctorListingPage.fxml"));
         About_btn.setOnAction(event -> switchScene(event, "about.fxml"));
         contact_btn.setOnAction(event -> switchScene(event, "contact.fxml"));
         btn_bookappointment.setOnAction(event -> switchScene(event, "DoctorListingPage.fxml"));

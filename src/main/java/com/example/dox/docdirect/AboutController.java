@@ -71,7 +71,7 @@ public class AboutController {
 
     @FXML
     private void handleDoctors(ActionEvent event) {
-        navigateToScene(event, "ourDoctors.fxml");
+        navigateToScene(event, "DoctorListingPage.fxml");
     }
 
     @FXML
@@ -86,7 +86,7 @@ public class AboutController {
 
     @FXML
     private void handleBookAppointment(ActionEvent event) {
-        navigateToScene(event, "ourDoctors.fxml");
+        navigateToScene(event, "DoctorListingPage.fxml");
     }
 
     @FXML

@@ -14,17 +14,17 @@
       <AnchorPane prefHeight="703.0" prefWidth="150.0" style="-fx-background-color: #f0f0f0;">
          <children>
             <VBox layoutX="27.0" layoutY="77.0" spacing="20.0">
-               <Button fx:id="home_btn" onAction="#initialize" prefWidth="110.0" text="Home" />
-               <Button fx:id="services_btn" onAction="#initialize" prefWidth="110.0" text="Services" />
-               <Button fx:id="our_doctor_btn" onAction="#initialize" prefWidth="110.0" text="Our Doctors" />
-               <Button fx:id="btn_about" onAction="#initialize" prefWidth="110.0" text="About" />
-               <Button fx:id="contact_btn" onAction="#initialize" prefWidth="110.0" text="Contact" />
+               <Button fx:id="home_btn" onAction="#handleHome" prefWidth="110.0" text="Home" />
+               <Button fx:id="services_btn" onAction="#handleOurServices" prefWidth="110.0" text="Services" />
+               <Button fx:id="our_doctor_btn" onAction="#handleDoctors" prefWidth="110.0" text="Our Doctors" />
+               <Button fx:id="btn_about" onAction="#handleAbout" prefWidth="110.0" text="About" />
+               <Button fx:id="contact_btn" onAction="#handleContact" prefWidth="110.0" text="Contact" />
             </VBox>
          </children>
       </AnchorPane>
 
       <!-- Main Content -->
-      <ScrollPane layoutX="150.0" prefHeight="703.0" prefWidth="650.0" vbarPolicy="ALWAYS">
+      <ScrollPane fitToHeight="true" layoutX="150.0" prefWidth="650.0" vbarPolicy="ALWAYS">
          <content>
             <AnchorPane prefHeight="950.0" prefWidth="650.0">
                <children>
@@ -35,7 +35,7 @@
                      </image>
                   </ImageView>
                   <Label layoutX="50.0" layoutY="14.0" style="-fx-font-size: 18.0; -fx-font-weight: bold;" text="DocDirect" />
-                  <Button fx:id="book_appointment_btn3" layoutX="480.0" layoutY="10.0" mnemonicParsing="false" onAction="#initialize" text="Book Appointment Now" />
+                  <Button fx:id="book_appointment_btn3" layoutX="480.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBookAppointment" text="Book Appointment Now" />
 
                   <!-- Consultation Header -->
                   <Label layoutX="10.0" layoutY="50.0" style="-fx-font-size: 24.0; -fx-font-weight: bold;" text="Consultation" />
@@ -48,7 +48,7 @@
                            <Image url="@inpersonconsultation.png" />
                         </image>
                      </ImageView>
-                     <Button fx:id="book_appointment_btn1" layoutX="10.0" layoutY="190.0" mnemonicParsing="false" onAction="#initialize" text="Book Appointment" />
+                     <Button fx:id="book_appointment_btn1" layoutX="10.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleDoctors" text="Book Appointment" />
                   </AnchorPane>
 
                      <!-- Video Consultation Section -->
@@ -59,7 +59,7 @@
                         </image>
                      </ImageView>
                      <Label layoutX="270.0" layoutY="20.0" prefHeight="150.0" prefWidth="350.0" text="02&#10;Video Consultation&#10;Speak to a doctor anytime, anywhere. At DocDirect, &#10;our doctors are available for you via video consultation&#10;whenever you need it." />
-                     <Button fx:id="book_appointment_btn2" layoutX="270.0" layoutY="170.0" mnemonicParsing="false" onAction="#initialize" text="Book Appointment" />
+                     <Button fx:id="book_appointment_btn2" layoutX="270.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleDoctors" text="Book Appointment" />
                   </AnchorPane>
 
                   <!-- Amar Jotno Plan Section -->
@@ -70,7 +70,7 @@
                            <Image url="@amrjotno.png" />
                         </image>
                      </ImageView>
-                     <Button layoutX="10.0" layoutY="190.0" mnemonicParsing="false" text="Amar Jotno Plans" />
+                     <Button fx:id="amr_jotno_plans" layoutX="10.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleAmrJotnoPlans" text="Amar Jotno Plans" />
                   </AnchorPane>
                </children>
             </AnchorPane>

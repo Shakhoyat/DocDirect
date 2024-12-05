@@ -48,14 +48,14 @@
                   <Image url="@healthpackages.png" />
                </image>
             </ImageView>
-            <Button fx:id="btn_health_checkupnPackages" layoutX="20.0" layoutY="364.0" mnemonicParsing="false" style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-size: 12px; -fx-padding: 5 15 5 15; -fx-background-radius: 20;" text="Read More" />
+            <Button fx:id="btn_health_checkupnPackages" layoutX="20.0" layoutY="364.0" mnemonicParsing="false" onAction="#initialize" style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-size: 12px; -fx-padding: 5 15 5 15; -fx-background-radius: 20;" text="Read More" />
 
             <ImageView fitHeight="120.0" fitWidth="550.0" layoutX="14.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@membershipPlans.png" />
                </image>
             </ImageView>
-            <Button fx:id="btn_membershipPlans" layoutX="20.0" layoutY="520.0" mnemonicParsing="false" style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-size: 12px; -fx-padding: 5 15 5 15; -fx-background-radius: 20;" text="Read More" />
+            <Button fx:id="btn_membershipPlans" layoutX="20.0" layoutY="520.0" mnemonicParsing="false" onAction="#initialize" style="-fx-background-color: #EC407A; -fx-text-fill: white; -fx-font-size: 12px; -fx-padding: 5 15 5 15; -fx-background-radius: 20;" text="Read More" />
          </children>
       </AnchorPane>
    </children>

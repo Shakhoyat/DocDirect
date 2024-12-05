@@ -65,12 +65,11 @@ public class ContactController {
     @FXML
     private void initialize() {
         homeButton.setOnAction(event -> changeScene("dashboard.fxml"));
-        ourDoctorsButton.setOnAction(event -> changeScene("ourDoctors.fxml"));
+        ourDoctorsButton.setOnAction(event -> changeScene("DoctorListingPage.fxml"));
         servicesButton.setOnAction(event -> changeScene("services.fxml"));
         aboutButton.setOnAction(event -> changeScene("about.fxml"));
         contactButton.setOnAction(event -> changeScene("contact.fxml"));
-
-        // Set the submit button action
+        bookAppointmentButton.setOnAction(event -> changeScene("DoctorListingPage.fxml"));
         submitButton.setOnAction(event -> handleSubmit());
     }
 

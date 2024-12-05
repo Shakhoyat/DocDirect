@@ -42,7 +42,7 @@ public class DashboardController {
         servicesButton1.setOnAction(event -> switchScene("services.fxml", "Services"));
 
         // Button action for "Our Doctors"
-        ourDoctorsButton.setOnAction(event -> switchScene("ourDoctors.fxml", "Our Doctors"));
+        ourDoctorsButton.setOnAction(event -> switchScene("DoctorListingPage.fxml", "Our Doctors"));
 
         // Button action for "About"
         aboutButton.setOnAction(event -> switchScene("about.fxml", "About"));
@@ -54,7 +54,7 @@ public class DashboardController {
         servicesButton2.setOnAction(event -> switchScene("services.fxml", "Explore Our Services"));
 
         // Button action for "Book an Appointment"
-        bookAppointmentButton.setOnAction(event -> switchScene("ourDoctors.fxml", "Book an Appointment"));
+        bookAppointmentButton.setOnAction(event -> switchScene("DoctorListingPage.fxml", "Book an Appointment"));
     }
 
     private void switchScene(String fxmlFileName, String title) {

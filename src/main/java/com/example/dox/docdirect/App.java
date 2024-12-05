@@ -10,6 +10,8 @@ public class App extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("login2.fxml"));
+      //  Parent root = FXMLLoader.load(getClass().getResource("DoctorListingPage.fxml"));
+
         primaryStage.setTitle("DocDirect");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
