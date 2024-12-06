@@ -1,4 +1,5 @@
 package com.example.dox.docdirect;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -9,92 +10,58 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class membershipplan {
-    @FXML
-    private Button buy1;
+public class membershipPlan3Controller {
 
     @FXML
-    private Button buy2;
+    private Button btn_about;
 
     @FXML
-    private Button buy3;
+    private Button btn_bookAppointment;
 
     @FXML
-    private Button buy4;
+    private Button btn_buy1;
 
     @FXML
-    private Button buy5;
+    private Button btn_buy2;
 
     @FXML
-    private Button buy6;
+    private Button btn_buy3;
 
     @FXML
-    private Button buy7;
+    private Button btn_cart1;
 
     @FXML
-    private Button buy8;
+    private Button btn_cart2;
 
     @FXML
-    private Button buy9;
+    private Button btn_cart3;
 
     @FXML
-    private Button cart1;
+    private Button btn_contact;
 
     @FXML
-    private Button cart2;
+    private Button btn_doctor;
 
     @FXML
-    private Button cart3;
+    private Button btn_home;
 
     @FXML
-    private Button cart4;
-
-    @FXML
-    private Button cart5;
-
-    @FXML
-    private Button cart6;
-
-    @FXML
-    private Button cart7;
-
-    @FXML
-    private Button cart8;
-
-    @FXML
-    private Button cart9;
-
-    @FXML
-    private Button contact;
-
-    @FXML
-    private Button doctor;
-
-    @FXML
-    private Button home;
-
-    @FXML
-    private Button service;
-    @FXML
-    private Button about;
-
+    private Button btn_service;
     private Stage stage;
     private Scene scene;
     private Parent root;
-
     @FXML
     private void initialize() {
-        home.setOnAction(event -> switchScene(event, "dashboard.fxml"));
-        service.setOnAction(event -> switchScene(event, "services.fxml"));
-        doctor.setOnAction(event -> switchScene(event, "DoctorListingPage.fxml"));
-        about.setOnAction(event -> switchScene(event, "about.fxml"));
-        contact.setOnAction(event -> switchScene(event, "contact.fxml"));
-//        btn_bookappointment.setOnAction(event -> switchScene(event, "DoctorListingPage.fxml"));
+        btn_home.setOnAction(event -> switchScene(event, "dashboard.fxml"));
+        btn_service.setOnAction(event -> switchScene(event, "services.fxml"));
+        btn_doctor.setOnAction(event -> switchScene(event, "DoctorListingPage.fxml"));
+        btn_about.setOnAction(event -> switchScene(event, "about.fxml"));
+        btn_contact.setOnAction(event -> switchScene(event, "contact.fxml"));
+        btn_bookAppointment.setOnAction(event -> switchScene(event, "DoctorListingPage.fxml"));
 //        btn_consultations.setOnAction(event -> switchScene(event, "consultation.fxml"));
 //        btn_health_checkupnPackages.setOnAction(event -> switchScene(event, "healthCheckupPaackages.fxml"));
 //        btn_membershipPlans.setOnAction(event -> switchScene(event, "membershipPlan.fxml"));
     }
-
     private void switchScene(javafx.event.ActionEvent event, String fxmlFile) {
         try {
             root = FXMLLoader.load(getClass().getResource(fxmlFile));
@@ -106,6 +73,5 @@ public class membershipplan {
             e.printStackTrace();
         }
     }
-    }
-
+}
 

@@ -7,17 +7,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.membershipplan">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.membershipPlan3Controller">
     <children>
         <AnchorPane prefHeight="400.0" prefWidth="600.0">
             <children>
                 <AnchorPane prefHeight="428.0" prefWidth="127.0">
                     <children>
-                        <Button layoutX="41.0" layoutY="74.0" mnemonicParsing="false" text="Button" />
-                        <Button layoutX="41.0" layoutY="151.0" mnemonicParsing="false" text="Button" />
-                        <Button layoutX="41.0" layoutY="214.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" text="Button" />
-                        <Button layoutX="41.0" layoutY="271.0" mnemonicParsing="false" text="Button" />
-                        <Button layoutX="41.0" layoutY="364.0" mnemonicParsing="false" text="Button" />
+                        <Button fx:id="btn_home" layoutX="41.0" layoutY="74.0" mnemonicParsing="false" text="Home" />
+                        <Button fx:id="btn_service" layoutX="41.0" layoutY="151.0" mnemonicParsing="false" text="Services" />
+                        <Button fx:id="btn_doctor" layoutX="27.0" layoutY="214.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="97.0" text="Our Doctors" />
+                        <Button fx:id="btn_about" layoutX="41.0" layoutY="271.0" mnemonicParsing="false" text="About" />
+                        <Button fx:id="btn_contact" layoutX="41.0" layoutY="364.0" mnemonicParsing="false" text="Contact" />
                     </children></AnchorPane>
                 <AnchorPane layoutX="130.0" prefHeight="428.0" prefWidth="709.0">
                     <children>
@@ -33,15 +33,15 @@
                             </image>
                         </ImageView>
                         <Label layoutX="34.0" layoutY="18.0" text="DocDirect" />
-                        <Button layoutX="576.0" layoutY="14.0" mnemonicParsing="false" text="Book Appointment" />
+                        <Button fx:id="btn_bookAppointment" layoutX="576.0" layoutY="14.0" mnemonicParsing="false" text="Book Appointment" />
                         <Label layoutX="14.0" layoutY="96.0" text="Our membership plans cover the healthcare needs of you and your family. The plans allow &#10;you to access doctors as many times as you need for a one-time purchase to proactively&#10; manage your health, be it yearly or for a certain period. Membership plans also cover a &#10;set of tests especially tailored by experienced doctors to meet your healthcare needs." />
                         <Label layoutX="17.0" layoutY="182.0" text="Amar Jotno Plan (Doctors Video Consultation)" />
-                        <Button layoutX="28.0" layoutY="389.0" mnemonicParsing="false" text="Buy Now" />
-                        <Button layoutX="115.0" layoutY="389.0" mnemonicParsing="false" text="Add to cart" />
-                        <Button layoutX="227.0" layoutY="389.0" mnemonicParsing="false" text="Buy Now" />
-                        <Button layoutX="312.0" layoutY="389.0" mnemonicParsing="false" text="Add to cart" />
-                        <Button layoutX="443.0" layoutY="389.0" mnemonicParsing="false" text="Buy Now" />
-                        <Button layoutX="526.0" layoutY="389.0" mnemonicParsing="false" text="Add to cart" />
+                        <Button fx:id="btn_buy1" layoutX="28.0" layoutY="389.0" mnemonicParsing="false" text="Buy Now" />
+                        <Button fx:id="btn_cart1" layoutX="115.0" layoutY="389.0" mnemonicParsing="false" text="Add to cart" />
+                        <Button fx:id="btn_buy2" layoutX="227.0" layoutY="389.0" mnemonicParsing="false" text="Buy Now" />
+                        <Button fx:id="btn_cart2" layoutX="312.0" layoutY="389.0" mnemonicParsing="false" text="Add to cart" />
+                        <Button fx:id="btn_buy3" layoutX="443.0" layoutY="389.0" mnemonicParsing="false" text="Buy Now" />
+                        <Button fx:id="btn_cart3" layoutX="526.0" layoutY="389.0" mnemonicParsing="false" text="Add to cart" />
                         <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="22.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
                      <image>

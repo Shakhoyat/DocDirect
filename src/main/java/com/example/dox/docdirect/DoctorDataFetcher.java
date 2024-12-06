@@ -46,13 +46,16 @@ public class DoctorDataFetcher {
 
         public static class Schedule {
             private String date;
-            private String time;
+            private String time1;
+            private String time2;
             private String day;
 
             public String getDate() { return date; }
             public void setDate(String date) { this.date = date; }
-            public String getTime() { return time; }
-            public void setTime(String time) { this.time = time; }
+            public String getTime1() { return time1; }
+            public void setTime1(String time1) { this.time1 = time1; }
+            public String getTime2() { return time2; }
+            public void setTime2(String time2) { this.time2 = time2; }
             public String getDay() { return day; }
             public void setDay(String day) { this.day = day; }
         }
@@ -74,11 +77,11 @@ public class DoctorDataFetcher {
 
             // Parse JSON response
             JsonElement rootElement = JsonParser.parseString(response.body());
-            if (!rootElement.isJsonArray()) {
+            if (!rootElement.isJsonObject()) {
                 throw new IllegalArgumentException("Expected JSON array as the root element");
             }
 
-            JsonArray doctorArray = rootElement.getAsJsonArray();
+            JsonArray doctorArray = rootElement.getAsJsonObject().getAsJsonArray("data");
             List<Doctor> doctors = new ArrayList<>();
 
             for (JsonElement element : doctorArray) {
@@ -116,7 +119,8 @@ public class DoctorDataFetcher {
                         Doctor.Schedule schedule = new Doctor.Schedule();
 
                         schedule.date = scheduleObject.has("date") ? scheduleObject.get("date").getAsString() : "";
-                        schedule.time = scheduleObject.has("time") ? scheduleObject.get("time").getAsString() : "";
+                        schedule.time1 = scheduleObject.has("time1") ? scheduleObject.get("time1").getAsString() : "";
+                        schedule.time2 = scheduleObject.has("time2") ? scheduleObject.get("time2").getAsString() : "";
                         schedule.day = scheduleObject.has("day") ? scheduleObject.get("day").getAsString() : "";
 
                         doctor.schedule.add(schedule);

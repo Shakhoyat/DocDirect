@@ -55,10 +55,6 @@ public class AboutController {
             e.printStackTrace();
         }
     }
-
-    /**
-     * Action handlers for buttons to change scenes.
-     */
     @FXML
     private void handleHome(ActionEvent event) {
         navigateToScene(event, "dashboard.fxml");

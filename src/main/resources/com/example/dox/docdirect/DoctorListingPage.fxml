@@ -8,19 +8,19 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.DoctorListingController">
     <!-- Sidebar -->
-    <VBox layoutX="10.0" layoutY="10.0" prefWidth="150.0" spacing="20" style="-fx-padding: 10; -fx-background-color: #001f3f;">
-        <Button fx:id="home" text="Home" style="-fx-background-color: #ffffff; -fx-text-fill: #001f3f;" />
-        <Button fx:id="services" text="Services" style="-fx-background-color: #ffffff; -fx-text-fill: #001f3f;" />
-        <Button fx:id="doctor" text="Our Doctors" style="-fx-background-color: #ffffff; -fx-text-fill: #001f3f;" />
-        <Button fx:id="about" text="About" style="-fx-background-color: #ffffff; -fx-text-fill: #001f3f;" />
-        <Button fx:id="contact" text="Contact" style="-fx-background-color: #ffffff; -fx-text-fill: #001f3f;" />
+    <VBox alignment="CENTER" prefHeight="410.0" prefWidth="165.0" spacing="40.0" style="-fx-padding: 10; -fx-background-color: #001f3f;">
+        <Button fx:id="home_btn" style="-fx-background-color: #ffffff; -fx-text-fill: #001f3f;" text="Home" />
+        <Button fx:id="services_btn" style="-fx-background-color: #ffffff; -fx-text-fill: #001f3f;" text="Services" />
+        <Button fx:id="doctor_btn" style="-fx-background-color: #ffffff; -fx-text-fill: #001f3f;" text="Our Doctors" />
+        <Button fx:id="about_btn" style="-fx-background-color: #ffffff; -fx-text-fill: #001f3f;" text="About" />
+        <Button fx:id="contact_btn" style="-fx-background-color: #ffffff; -fx-text-fill: #001f3f;" text="Contact" />
     </VBox>
 
     <!-- Main Content Area -->
-    <AnchorPane layoutX="170.0" layoutY="10.0" prefWidth="600.0" prefHeight="400.0">
-        <ScrollPane fx:id="scrollPane" fitToWidth="true" fitToHeight="true" prefWidth="600.0" prefHeight="400.0">
+    <AnchorPane layoutX="170.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+        <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" prefHeight="400.0" prefWidth="600.0">
             <content>
-                <GridPane fx:id="doctorGrid" hgap="10" vgap="10" style="-fx-padding: 10;">
+                <GridPane fx:id="doctorGrid" hgap="10" style="-fx-padding: 10;" vgap="10">
                     <!-- Doctor cards will be dynamically added here -->
                 </GridPane>
             </content>
