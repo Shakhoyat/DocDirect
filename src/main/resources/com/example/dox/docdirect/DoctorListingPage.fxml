@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.DoctorListingController">
+<AnchorPane prefHeight="541.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.DoctorListingController">
     <!-- Sidebar -->
-    <VBox alignment="CENTER" prefHeight="410.0" prefWidth="165.0" spacing="40.0" style="-fx-padding: 10; -fx-background-color: #001f3f;">
+    <VBox alignment="CENTER" prefHeight="541.0" prefWidth="170.0" spacing="40.0" style="-fx-padding: 10; -fx-background-color: #C30186;">
         <Button fx:id="home_btn" style="-fx-background-color: #ffffff; -fx-text-fill: #001f3f;" text="Home" />
         <Button fx:id="services_btn" style="-fx-background-color: #ffffff; -fx-text-fill: #001f3f;" text="Services" />
         <Button fx:id="doctor_btn" style="-fx-background-color: #ffffff; -fx-text-fill: #001f3f;" text="Our Doctors" />
@@ -17,10 +17,10 @@
     </VBox>
 
     <!-- Main Content Area -->
-    <AnchorPane layoutX="170.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
-        <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" prefHeight="400.0" prefWidth="600.0">
+    <AnchorPane layoutX="170.0" prefHeight="541.0" prefWidth="790.0">
+        <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" prefHeight="541.0" prefWidth="790.0">
             <content>
-                <GridPane fx:id="doctorGrid" hgap="10" style="-fx-padding: 10;" vgap="10">
+                <GridPane fx:id="doctorGrid" hgap="10" prefHeight="526.0" prefWidth="803.0" style="-fx-padding: 10;" vgap="10">
                     <!-- Doctor cards will be dynamically added here -->
                 </GridPane>
             </content>

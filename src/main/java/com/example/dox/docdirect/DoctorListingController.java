@@ -21,7 +21,7 @@ public class DoctorListingController {
         private Stage stage;
         private Scene scene;
         private Parent root;
-        private int numColumns = 2;
+        private int numColumns = 3;
         @FXML
         private Button about_btn;
         @FXML

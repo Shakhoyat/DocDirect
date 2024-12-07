@@ -12,13 +12,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.docDetailsController">
+<AnchorPane prefHeight="549.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.docDetailsController">
    <children>
       <VBox prefHeight="600.0" prefWidth="1000.0">
          <children>
             <HBox prefHeight="285.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
                <children>
-                  <VBox prefHeight="331.0" prefWidth="834.0" HBox.hgrow="ALWAYS">
+                  <VBox prefHeight="600.0" prefWidth="565.0" HBox.hgrow="ALWAYS">
                      <children>
                         <Label fx:id="name" graphicTextGap="5.0" text="Prof. Dr. Mahboob Ali">
                            <font>
@@ -144,7 +144,7 @@
                               <ToggleButton fx:id="time2_2" layoutX="145.0" layoutY="15.0" mnemonicParsing="false" text="18:00 to 21:00" />
                            </children>
                         </HBox>
-                        <Button fx:id="book_btn" mnemonicParsing="false" text="Book Appointment -&gt;">
+                        <Button fx:id="book_btn" mnemonicParsing="false" onAction="#handleBookNow" text="Book Appointment -&gt;">
                            <VBox.margin>
                               <Insets top="40.0" />
                            </VBox.margin>
@@ -154,9 +154,9 @@
                         <Insets left="40.0" top="40.0" />
                      </padding>
                   </VBox>
-                  <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="699.0">
+                  <VBox alignment="TOP_CENTER" prefHeight="565.0" prefWidth="398.0">
                      <children>
-                        <ImageView fx:id="docImage" fitHeight="442.0" fitWidth="377.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="docImage" fitHeight="449.0" fitWidth="374.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
                               <Insets top="30.0" />
                            </VBox.margin>

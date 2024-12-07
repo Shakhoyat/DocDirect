@@ -1,7 +1,9 @@
 package com.example.dox.docdirect;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -66,6 +68,22 @@ public class docDetailsController {
 
     @FXML
     private ToggleButton time2_2;
+
+    private void navigateToScene(ActionEvent event, String fxmlFile) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(fxmlFile));
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    private void handleBookNow(ActionEvent event) {
+        navigateToScene(event, "checkOut.fxml");
+    }
 
     private DoctorDataFetcher.Doctor doctor;
     public void setDoctorData(DoctorDataFetcher.Doctor doctor) {

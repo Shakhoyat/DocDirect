@@ -8,10 +8,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.ConsultationController">
+<AnchorPane prefHeight="945.0" prefWidth="939.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.ConsultationController">
    <children>
       <!-- Sidebar -->
-      <AnchorPane prefHeight="703.0" prefWidth="150.0" style="-fx-background-color: #f0f0f0;">
+      <AnchorPane prefHeight="952.0" prefWidth="150.0" style="-fx-background-color: #f0f0f0;">
          <children>
             <VBox layoutX="27.0" layoutY="77.0" spacing="20.0">
                <Button fx:id="home_btn" onAction="#handleHome" prefWidth="110.0" text="Home" />
@@ -24,9 +24,9 @@
       </AnchorPane>
 
       <!-- Main Content -->
-      <ScrollPane fitToHeight="true" layoutX="150.0" prefWidth="650.0" vbarPolicy="ALWAYS">
+      <ScrollPane fitToHeight="true" layoutX="150.0" prefHeight="952.0" prefWidth="787.0" vbarPolicy="ALWAYS">
          <content>
-            <AnchorPane prefHeight="950.0" prefWidth="650.0">
+            <AnchorPane prefHeight="949.0" prefWidth="787.0">
                <children>
                   <!-- Logo and Header -->
                   <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
@@ -35,42 +35,42 @@
                      </image>
                   </ImageView>
                   <Label layoutX="50.0" layoutY="14.0" style="-fx-font-size: 18.0; -fx-font-weight: bold;" text="DocDirect" />
-                  <Button fx:id="book_appointment_btn3" layoutX="480.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBookAppointment" text="Book Appointment Now" />
+                  <Button fx:id="book_appointment_btn3" layoutX="579.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBookAppointment" prefHeight="38.0" prefWidth="184.0" text="Book Appointment Now" />
 
                   <!-- Consultation Header -->
-                  <Label layoutX="10.0" layoutY="50.0" style="-fx-font-size: 24.0; -fx-font-weight: bold;" text="Consultation" />
+                  <Label layoutX="10.0" layoutY="50.0" prefHeight="59.0" prefWidth="170.0" style="-fx-font-size: 24.0; -fx-font-weight: bold;" text="Consultation" />
 
                   <!-- In-person Consultation Section -->
                   <AnchorPane layoutY="100.0" prefHeight="250.0" prefWidth="650.0">
-                     <Label layoutX="10.0" layoutY="20.0" prefHeight="200.0" prefWidth="310.0" text="01 &#10;In-person Consultation&#10;Meet our family medicine doctors, healthcare &#10;professionals, and visiting specialists at our &#10;flagship health center in Banani. They take the &#10;time to listen to you and understand your health&#10;care needs." />
-                     <ImageView fitHeight="224.0" fitWidth="300.0" layoutX="340.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <Label layoutX="10.0" layoutY="20.0" prefHeight="200.0" prefWidth="335.0" text="01 &#10;In-person Consultation&#10;Meet our family medicine doctors, healthcare &#10;professionals, and visiting specialists at our &#10;flagship health center in Banani. They take the &#10;time to listen to you and understand your health&#10;care needs." />
+                     <ImageView fitHeight="253.0" fitWidth="377.0" layoutX="381.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                         <image>
                            <Image url="@inpersonconsultation.png" />
                         </image>
                      </ImageView>
-                     <Button fx:id="book_appointment_btn1" layoutX="10.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleDoctors" text="Book Appointment" />
+                     <Button fx:id="book_appointment_btn1" layoutX="67.0" layoutY="207.0" mnemonicParsing="false" onAction="#handleDoctors" text="Book Appointment" />
                   </AnchorPane>
 
                      <!-- Video Consultation Section -->
                   <AnchorPane layoutY="350.0" prefHeight="250.0" prefWidth="650.0">
-                     <ImageView fitHeight="200.0" fitWidth="244.0" layoutX="10.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <ImageView fitHeight="291.0" fitWidth="388.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                         <image>
                            <Image url="@videoconsultation.png" />
                         </image>
                      </ImageView>
-                     <Label layoutX="270.0" layoutY="20.0" prefHeight="150.0" prefWidth="350.0" text="02&#10;Video Consultation&#10;Speak to a doctor anytime, anywhere. At DocDirect, &#10;our doctors are available for you via video consultation&#10;whenever you need it." />
-                     <Button fx:id="book_appointment_btn2" layoutX="270.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleDoctors" text="Book Appointment" />
+                     <Label layoutX="401.0" layoutY="27.0" prefHeight="152.0" prefWidth="351.0" text="02&#10;Video Consultation&#10;Speak to a doctor anytime, anywhere. At DocDirect, &#10;our doctors are available for you via video consultation&#10;whenever you need it." />
+                     <Button fx:id="book_appointment_btn2" layoutX="444.0" layoutY="179.0" mnemonicParsing="false" onAction="#handleDoctors" text="Book Appointment" />
                   </AnchorPane>
 
                   <!-- Amar Jotno Plan Section -->
-                  <AnchorPane layoutY="620.0" prefHeight="250.0" prefWidth="650.0">
-                     <Label layoutX="10.0" layoutY="20.0" prefHeight="171.0" prefWidth="300.0" text="03&#10;Amar Jotno Plan (Video Consultation Plan)&#10;We have the right plan for you and your family.&#10;We are now offering video consultation &#10;packages, giving access to our internationally&#10;trained doctors, as many times as needed. &#10;Plans range from 3, 6, or 12 months at &#10;affordable prices." />
-                     <ImageView fitHeight="185.0" fitWidth="290.0" layoutX="340.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <AnchorPane layoutY="672.0" prefHeight="226.0" prefWidth="756.0">
+                     <Label layoutX="15.0" layoutY="23.0" prefHeight="178.0" prefWidth="336.0" text="03&#10;Amar Jotno Plan (Video Consultation Plan)&#10;We have the right plan for you and your family.&#10;We are now offering video consultation &#10;packages, giving access to our internationally&#10;trained doctors, as many times as needed. &#10;Plans range from 3, 6, or 12 months at &#10;affordable prices." />
+                     <ImageView fitHeight="261.0" fitWidth="390.0" layoutX="366.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
                         <image>
                            <Image url="@amrjotno.png" />
                         </image>
                      </ImageView>
-                     <Button fx:id="amr_jotno_plans" layoutX="10.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleAmrJotnoPlans" text="Amar Jotno Plans" />
+                     <Button fx:id="amr_jotno_plans" layoutX="77.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleAmrJotnoPlans" text="Amar Jotno Plans" />
                   </AnchorPane>
                </children>
             </AnchorPane>
