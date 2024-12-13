@@ -44,7 +44,7 @@ public class DoctorCardController {
 
         detailsButton.setOnAction(e -> {
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("docDetails.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("Myfxmls/Doctorss/docDetails.fxml"));
                 Node doctorDetails = loader.load();
 
                 docDetailsController controller = loader.getController();
@@ -67,9 +67,4 @@ public class DoctorCardController {
 
         });
     }
-
-//    private void showDoctorDetails() {
-//        // Implement details view logic
-//        System.out.println("Show details for: " + doctor.name);
-//    }
 }

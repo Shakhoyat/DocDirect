@@ -64,12 +64,12 @@ public class ContactController {
 
     @FXML
     private void initialize() {
-        homeButton.setOnAction(event -> changeScene("dashboard.fxml"));
-        ourDoctorsButton.setOnAction(event -> changeScene("DoctorListingPage.fxml"));
-        servicesButton.setOnAction(event -> changeScene("services.fxml"));
-        aboutButton.setOnAction(event -> changeScene("about.fxml"));
-        contactButton.setOnAction(event -> changeScene("contact.fxml"));
-        bookAppointmentButton.setOnAction(event -> changeScene("DoctorListingPage.fxml"));
+        homeButton.setOnAction(event -> changeScene("Myfxmls/dashboard/dashboard.fxml"));
+        ourDoctorsButton.setOnAction(event -> changeScene("Myfxmls/Doctorss/DoctorListingPage.fxml"));
+        servicesButton.setOnAction(event -> changeScene("Myfxmls/services/services.fxml"));
+        aboutButton.setOnAction(event -> changeScene("Myfxmls/About/about.fxml"));
+        contactButton.setOnAction(event -> changeScene("Myfxmls/contact/contact.fxml"));
+        bookAppointmentButton.setOnAction(event -> changeScene("Myfxmls/Doctorss/DoctorListingPage.fxml"));
         submitButton.setOnAction(event -> handleSubmit());
     }
 

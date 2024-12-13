@@ -59,16 +59,16 @@ public class ourdoctorsController {
     @FXML
     private void initialize() {
         // Set up event handlers for navigation buttons
-        homeButton.setOnAction(event -> changeScene("dashboard.fxml"));
-        ourDoctorsButton.setOnAction(event -> changeScene("ourDoctors.fxml"));
-        servicesButton.setOnAction(event -> changeScene("services.fxml"));
-        aboutButton.setOnAction(event -> changeScene("about.fxml"));
-        contactButton.setOnAction(event -> changeScene("contact.fxml"));
+        homeButton.setOnAction(event -> changeScene("Myfxmls/dashboard/dashboard.fxml"));
+        ourDoctorsButton.setOnAction(event -> changeScene("Myfxmls/Doctorss/ourDoctors.fxml"));
+        servicesButton.setOnAction(event -> changeScene("Myfxmls/services/services.fxml"));
+        aboutButton.setOnAction(event -> changeScene("Myfxmls/About/about.fxml"));
+        contactButton.setOnAction(event -> changeScene("Myfxmls/contact/contact.fxml"));
 
         // Set up event handlers for doctor details buttons
-        viewDetailsDoctor1.setOnAction(event -> changeScene("doctor1_details.fxml"));
-        viewDetailsDoctor2.setOnAction(event -> changeScene("doctor2_details.fxml"));
-        viewDetailsDoctor3.setOnAction(event -> changeScene("doctor3_details.fxml"));
-        viewDetailsDoctor4.setOnAction(event -> changeScene("doctor4_details.fxml"));
+//        viewDetailsDoctor1.setOnAction(event -> changeScene("doctor1_details.fxml"));
+//        viewDetailsDoctor2.setOnAction(event -> changeScene("doctor2_details.fxml"));
+//        viewDetailsDoctor3.setOnAction(event -> changeScene("doctor3_details.fxml"));
+//        viewDetailsDoctor4.setOnAction(event -> changeScene("doctor4_details.fxml"));
     }
 }

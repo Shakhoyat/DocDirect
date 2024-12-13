@@ -62,35 +62,35 @@ public class ConsultationController {
 
     @FXML
     private void handleHome(ActionEvent event) {
-        navigateToScene(event, "dashboard.fxml");
+        navigateToScene(event, "Myfxmls/dashboard/dashboard.fxml");
     }
     @FXML
     private void handleDoctors(ActionEvent event) {
-        navigateToScene(event, "DoctorListingPage.fxml");
+        navigateToScene(event, "Myfxmls/Doctorss/DoctorListingPage.fxml");
     }
 
     @FXML
     private void handleAbout(ActionEvent event) {
-        navigateToScene(event, "about.fxml");
+        navigateToScene(event, "Myfxmls/About/about.fxml");
     }
 
     @FXML
     private void handleContact(ActionEvent event) {
-        navigateToScene(event, "contact.fxml");
+        navigateToScene(event, "Myfxmls/contact/contact.fxml");
     }
 
     @FXML
     private void handleBookAppointment(ActionEvent event) {
-        navigateToScene(event, "DoctorListingPage.fxml");
+        navigateToScene(event, "Myfxmls/Doctorss/DoctorListingPage.fxml");
     }
 
     @FXML
     private void handleOurServices(ActionEvent event) {
-        navigateToScene(event, "services.fxml");
+        navigateToScene(event, "Myfxmls/services/services.fxml");
     }
     @FXML
     private void handleAmrJotnoPlans(ActionEvent event) {
-        navigateToScene(event, "membershipPlan3.fxml");
+        navigateToScene(event, "Myfxmls/MembershipPlans/membershipPlan3.fxml");
     }
 
 }

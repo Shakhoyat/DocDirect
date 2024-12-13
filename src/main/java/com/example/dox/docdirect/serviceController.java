@@ -45,15 +45,15 @@ public class serviceController {
 
     @FXML
     private void initialize() {
-        home_btn.setOnAction(event -> switchScene(event, "dashboard.fxml"));
-        service_btn.setOnAction(event -> switchScene(event, "services.fxml"));
-        ourDoctors_btn.setOnAction(event -> switchScene(event, "DoctorListingPage.fxml"));
-        About_btn.setOnAction(event -> switchScene(event, "about.fxml"));
-        contact_btn.setOnAction(event -> switchScene(event, "contact.fxml"));
-        btn_bookappointment.setOnAction(event -> switchScene(event, "DoctorListingPage.fxml"));
-        btn_consultations.setOnAction(event -> switchScene(event, "consultation.fxml"));
-        btn_health_checkupnPackages.setOnAction(event -> switchScene(event, "HealthCheckUp/healthCheckupPaackages.fxml"));
-        btn_membershipPlans.setOnAction(event -> switchScene(event, "membershipPlan.fxml"));
+        home_btn.setOnAction(event -> switchScene(event, "Myfxmls/dashboard/dashboard.fxml"));
+        service_btn.setOnAction(event -> switchScene(event, "Myfxmls/services/services.fxml"));
+        ourDoctors_btn.setOnAction(event -> switchScene(event, "Myfxmls/Doctorss/DoctorListingPage.fxml"));
+        About_btn.setOnAction(event -> switchScene(event, "Myfxmls/About/about.fxml"));
+        contact_btn.setOnAction(event -> switchScene(event, "Myfxmls/contact/contact.fxml"));
+        btn_bookappointment.setOnAction(event -> switchScene(event, "Myfxmls/Doctorss/DoctorListingPage.fxml"));
+        btn_consultations.setOnAction(event -> switchScene(event, "Myfxmls/consultation/consultation.fxml"));
+        btn_health_checkupnPackages.setOnAction(event -> switchScene(event, "Myfxmls/HealthCheckup/HealthCheckUp/healthCheckupPaackages.fxml"));
+        btn_membershipPlans.setOnAction(event -> switchScene(event, "Myfxmls/MembershipPlans/membershipPlan.fxml"));
     }
 
     private void switchScene(javafx.event.ActionEvent event, String fxmlFile) {

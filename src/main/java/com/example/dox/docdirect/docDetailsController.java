@@ -105,7 +105,7 @@ public class docDetailsController {
     @FXML
     private void handleBookNow(ActionEvent event) {
         storeDataToDB();
-        navigateToScene(event, "checkOut.fxml");
+        navigateToScene(event, "Myfxmls/checkOut/checkOut.fxml");
     }
 
     private DoctorDataFetcher.Doctor doctor;

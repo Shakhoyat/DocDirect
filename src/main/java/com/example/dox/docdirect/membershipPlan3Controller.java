@@ -19,24 +19,6 @@ public class membershipPlan3Controller {
     private Button btn_bookAppointment;
 
     @FXML
-    private Button btn_buy1;
-
-    @FXML
-    private Button btn_buy2;
-
-    @FXML
-    private Button btn_buy3;
-
-    @FXML
-    private Button btn_cart1;
-
-    @FXML
-    private Button btn_cart2;
-
-    @FXML
-    private Button btn_cart3;
-
-    @FXML
     private Button btn_contact;
 
     @FXML
@@ -56,15 +38,12 @@ public class membershipPlan3Controller {
     private Parent root;
     @FXML
     private void initialize() {
-        btn_home.setOnAction(event -> switchScene(event, "dashboard.fxml"));
-        btn_service.setOnAction(event -> switchScene(event, "services.fxml"));
-        btn_doctor.setOnAction(event -> switchScene(event, "DoctorListingPage.fxml"));
-        btn_about.setOnAction(event -> switchScene(event, "about.fxml"));
-        btn_contact.setOnAction(event -> switchScene(event, "contact.fxml"));
-        btn_bookAppointment.setOnAction(event -> switchScene(event, "DoctorListingPage.fxml"));
-//        btn_consultations.setOnAction(event -> switchScene(event, "consultation.fxml"));
-//        btn_health_checkupnPackages.setOnAction(event -> switchScene(event, "healthCheckupPaackages.fxml"));
-//        btn_membershipPlans.setOnAction(event -> switchScene(event, "membershipPlan.fxml"));
+        btn_home.setOnAction(event -> switchScene(event, "Myfxmls/dashboard/dashboard.fxml"));
+        btn_service.setOnAction(event -> switchScene(event, "Myfxmls/services/services.fxml"));
+        btn_doctor.setOnAction(event -> switchScene(event, "Myfxmls/Doctorss/DoctorListingPage.fxml"));
+        btn_about.setOnAction(event -> switchScene(event, "Myfxmls/About/about.fxml"));
+        btn_contact.setOnAction(event -> switchScene(event, "Myfxmls/contact/contact.fxml"));
+        btn_bookAppointment.setOnAction(event -> switchScene(event, "Myfxmls/Doctorss/DoctorListingPage.fxml"));
     }
     private void switchScene(javafx.event.ActionEvent event, String fxmlFile) {
         try {
@@ -115,18 +94,5 @@ public class membershipPlan3Controller {
     public void addPlan3ToCart() {
         addPlanToCart("12 Months Video Consultation Plan", 6250.0);
     }
-
-//    public void handleBuy1() {
-//        try {
-//            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/dox/docdirect/payment.fxml"));
-//            Parent root = fxmlLoader.load();
-//            Stage stage = new Stage();
-//            stage.setScene(new Scene(root));
-//            stage.setTitle("Payment");
-//            stage.show();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
 }
 

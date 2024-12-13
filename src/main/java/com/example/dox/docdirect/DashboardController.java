@@ -39,22 +39,22 @@ public class DashboardController {
        // homeButton.setOnAction(event -> switchScene("dashboard.fxml", "Home"));
 
         // Button action for "Services"
-        servicesButton1.setOnAction(event -> switchScene("services.fxml", "Services"));
+        servicesButton1.setOnAction(event -> switchScene("Myfxmls/services/services.fxml", "Services"));
 
         // Button action for "Our Doctors"
-        ourDoctorsButton.setOnAction(event -> switchScene("DoctorListingPage.fxml", "Our Doctors"));
+        ourDoctorsButton.setOnAction(event -> switchScene("Myfxmls/Doctorss/DoctorListingPage.fxml", "Our Doctors"));
 
         // Button action for "About"
-        aboutButton.setOnAction(event -> switchScene("about.fxml", "About"));
+        aboutButton.setOnAction(event -> switchScene("Myfxmls/About/about.fxml", "About"));
 
         // Button action for "Contact"
-        contactbutton.setOnAction(event -> switchScene("contact.fxml", "Contact"));
+        contactbutton.setOnAction(event -> switchScene("Myfxmls/contact/contact.fxml", "Contact"));
 
         // Button action for "Explore Our Services"
-        servicesButton2.setOnAction(event -> switchScene("services.fxml", "Explore Our Services"));
+        servicesButton2.setOnAction(event -> switchScene("Myfxmls/services/services.fxml", "Explore Our Services"));
 
         // Button action for "Book an Appointment"
-        bookAppointmentButton.setOnAction(event -> switchScene("DoctorListingPage.fxml", "Book an Appointment"));
+        bookAppointmentButton.setOnAction(event -> switchScene("Myfxmls/Doctorss/DoctorListingPage.fxml", "Book an Appointment"));
     }
 
     private void switchScene(String fxmlFileName, String title) {

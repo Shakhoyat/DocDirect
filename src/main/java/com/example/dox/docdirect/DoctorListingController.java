@@ -38,11 +38,11 @@ public class DoctorListingController {
         @FXML
         private Button services_btn;
     public void initialize() {
-        home_btn.setOnAction(event -> switchScene(event, "dashboard.fxml"));
-        services_btn.setOnAction(event -> switchScene(event, "services.fxml"));
-        doctor_btn.setOnAction(event -> switchScene(event, "DoctorListingPage.fxml"));
-        about_btn.setOnAction(event -> switchScene(event, "about.fxml"));
-        contact_btn.setOnAction(event -> switchScene(event, "contact.fxml"));
+        home_btn.setOnAction(event -> switchScene(event, "Myfxmls/dashboard/dashboard.fxml"));
+        services_btn.setOnAction(event -> switchScene(event, "Myfxmls/services/services.fxml"));
+        doctor_btn.setOnAction(event -> switchScene(event, "Myfxmls/Doctorss/DoctorListingPage.fxml"));
+        about_btn.setOnAction(event -> switchScene(event, "Myfxmls/About/about.fxml"));
+        contact_btn.setOnAction(event -> switchScene(event, "Myfxmls/contact/contact.fxml"));
 
 
         String apiUrl = "https://api.myjson.online/v1/records/b9ee7919-1a34-4016-9d6d-a9d8484cd99e";
@@ -56,7 +56,7 @@ public class DoctorListingController {
                 DoctorDataFetcher.Doctor doctor = doctors.get(i);
 
                 try {
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("DoctorCard.fxml"));
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Myfxmls/Doctorss/DoctorCard.fxml"));
                     Pane doctorCard = loader.load();
 
                     DoctorCardController controller = loader.getController();

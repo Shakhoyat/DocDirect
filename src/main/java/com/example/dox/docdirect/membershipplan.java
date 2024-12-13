@@ -84,11 +84,11 @@ public class membershipplan {
     private Parent root;
     @FXML
     private void initialize() {
-        home.setOnAction(event -> switchScene(event, "dashboard.fxml"));
-        service.setOnAction(event -> switchScene(event, "services.fxml"));
-        doctor.setOnAction(event -> switchScene(event, "DoctorListingPage.fxml"));
-        about.setOnAction(event -> switchScene(event, "about.fxml"));
-        contact.setOnAction(event -> switchScene(event, "contact.fxml"));
+        home.setOnAction(event -> switchScene(event, "Myfxmls/dashboard/dashboard.fxml"));
+        service.setOnAction(event -> switchScene(event, "Myfxmls/services/services.fxml"));
+        doctor.setOnAction(event -> switchScene(event, "Myfxmls/Doctorss/DoctorListingPage.fxml"));
+        about.setOnAction(event -> switchScene(event, "Myfxmls/About/about.fxml"));
+        contact.setOnAction(event -> switchScene(event, "Myfxmls/contact/contact.fxml"));
 
     }
 

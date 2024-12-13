@@ -189,7 +189,7 @@ public class SignUpController {
     @FXML
     void handleLoginNavigation(ActionEvent event) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/dox/docdirect/Myfxmls/login/login2.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Myfxmls/login/login2.fxml"));
             AnchorPane root = fxmlLoader.load();
             Stage stage = (Stage) btn_login.getScene().getWindow();
             stage.setScene(new Scene(root));

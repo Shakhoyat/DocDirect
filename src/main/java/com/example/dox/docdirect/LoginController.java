@@ -80,7 +80,7 @@ public class LoginController {
 
     private void switchToDashboard() {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("Myfxmls/dashboard/dashboard.fxml"));
             Stage stage = (Stage) btn_login.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("Dashboard");
@@ -92,7 +92,7 @@ public class LoginController {
     @FXML
     void switchToSignUp(ActionEvent event) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Signup.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Myfxmls/signup/Signup.fxml"));
             AnchorPane root = fxmlLoader.load();
             Stage stage = (Stage) btn_login.getScene().getWindow();
             stage.setScene(new Scene(root));
