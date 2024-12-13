@@ -39,11 +39,11 @@
                         <Font size="18.0" />
                      </font></Label>
                         <Button fx:id="btn_buy1" layoutX="32.0" layoutY="514.0" mnemonicParsing="false" text="Buy Now" />
-                        <Button fx:id="btn_cart1" layoutX="132.0" layoutY="514.0" mnemonicParsing="false" text="Add to cart" />
+                        <Button fx:id="btn_cart1" layoutX="132.0" layoutY="514.0" mnemonicParsing="false" onAction="#addPlan1ToCart" text="Add to cart" />
                         <Button fx:id="btn_buy2" layoutX="296.0" layoutY="514.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="73.0" text="Buy Now" />
-                        <Button fx:id="btn_cart2" layoutX="400.0" layoutY="514.0" mnemonicParsing="false" text="Add to cart" />
+                        <Button fx:id="btn_cart2" layoutX="400.0" layoutY="514.0" mnemonicParsing="false" onAction="#addPlan2ToCart" text="Add to cart" />
                         <Button fx:id="btn_buy3" layoutX="579.0" layoutY="514.0" mnemonicParsing="false" text="Buy Now" />
-                        <Button fx:id="btn_cart3" layoutX="691.0" layoutY="514.0" mnemonicParsing="false" text="Add to cart" />
+                        <Button fx:id="btn_cart3" layoutX="691.0" layoutY="514.0" mnemonicParsing="false" onAction="#addPlan3ToCart" text="Add to cart" />
                         <ImageView fitHeight="52.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fitHeight="252.0" fitWidth="241.0" layoutX="16.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
                      <image>

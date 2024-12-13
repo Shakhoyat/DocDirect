@@ -26,26 +26,34 @@
                                 <Font size="20.0" />
                             </font>
                         </Label>
-                        <Label layoutX="14.0" layoutY="70.0" text="Special Health Checks" />
-                        <Button layoutX="28.0" layoutY="336.0" mnemonicParsing="false" text="Buy Now" />
-                        <Button layoutX="175.0" layoutY="336.0" mnemonicParsing="false" text="Add to Cart" />
-                        <Button layoutX="413.0" layoutY="320.0" mnemonicParsing="false" text="Buy Now" />
-                        <Button layoutX="547.0" layoutY="320.0" mnemonicParsing="false" text="Add to Cart" />
+                        <Label layoutX="14.0" layoutY="70.0" text="Men Health Checks" />
+                        <Button layoutX="21.0" layoutY="320.0" mnemonicParsing="false" text="Buy Now" />
+                        <Button layoutX="110.0" layoutY="320.0" mnemonicParsing="false" text="Add to Cart" />
+                        <Button layoutX="240.0" layoutY="320.0" mnemonicParsing="false" text="Buy Now" />
+                        <Button layoutX="332.0" layoutY="320.0" mnemonicParsing="false" text="Add to Cart" />
+                        <Button layoutX="454.0" layoutY="320.0" mnemonicParsing="false" text="Buy Now" />
+                        <Button layoutX="550.0" layoutY="320.0" mnemonicParsing="false" text="Add to Cart" />
+                        <Button layoutX="642.0" layoutY="391.0" mnemonicParsing="false" text="Next.." />
                         <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@logo.png" />
+                                <Image url="@../logo.png" />
                             </image>
                         </ImageView>
                         <Label layoutX="34.0" layoutY="18.0" text="DocDirect" />
                         <Button layoutX="576.0" layoutY="14.0" mnemonicParsing="false" text="Book Appointment" />
-                  <ImageView fitHeight="218.0" fitWidth="268.0" layoutX="51.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="169.0" fitWidth="200.0" layoutX="15.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@specialpackage4.png" />
+                        <Image url="@../menHealthPackage1.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="202.0" fitWidth="268.0" layoutX="406.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="194.0" fitWidth="245.0" layoutX="238.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@specialpackage5.png" />
+                        <Image url="@../menHealthpackage2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="194.0" fitWidth="239.0" layoutX="454.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../Pictures/Screenshots/Screenshot%20from%202024-11-30%2006-33-03.png" />
                      </image>
                   </ImageView>
                     </children>

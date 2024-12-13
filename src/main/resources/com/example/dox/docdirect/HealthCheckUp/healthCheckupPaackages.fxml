@@ -39,17 +39,17 @@
                      <HBox layoutX="10.0" layoutY="175.0" spacing="20.0">
                         <ImageView fitHeight="190.0" fitWidth="210.0">
                            <image>
-                              <Image url="@herHealth1.png" />
+                              <Image url="@../herHealth1.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="190.0" fitWidth="201.0">
                            <image>
-                              <Image url="@herHealth2.png" />
+                              <Image url="@../herHealth2.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="190.0" fitWidth="196.0">
                            <image>
-                              <Image url="@herHealth3.png" />
+                              <Image url="@../herHealth3.png" />
                            </image>
                         </ImageView>
                      </HBox>
@@ -73,17 +73,17 @@
                      <HBox layoutX="1.0" layoutY="80.0" spacing="20.0">
                         <ImageView fitHeight="227.0" fitWidth="215.0">
                            <image>
-                              <Image url="@menHealthPackage1.png" />
+                              <Image url="@../menHealthPackage1.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="224.0" fitWidth="240.0">
                            <image>
-                              <Image url="@menHealthpackage2.png" />
+                              <Image url="@../menHealthpackage2.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="228.0" fitWidth="239.0">
                            <image>
-                              <Image url="@menHealthPackage3.png" />
+                              <Image url="@../menHealthPackage3.png" />
                            </image>
                         </ImageView>
                      </HBox>
@@ -102,17 +102,17 @@
                      <HBox layoutX="10.0" layoutY="59.0" prefHeight="234.0" prefWidth="730.0" spacing="20.0">
                         <ImageView fitHeight="235.0" fitWidth="225.0">
                            <image>
-                              <Image url="@specialpackage1.png" />
+                              <Image url="@../specialpackage1.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="230.0" fitWidth="234.0">
                            <image>
-                              <Image url="@specialpackage2.png" />
+                              <Image url="@../specialpackage2.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="234.0" fitWidth="233.0">
                            <image>
-                              <Image url="@specialpackage3.png" />
+                              <Image url="@../specialpackage3.png" />
                            </image>
                         </ImageView>
                      </HBox>
@@ -141,12 +141,12 @@
                      <HBox layoutX="10.0" layoutY="71.0" spacing="20.0">
                         <ImageView fitHeight="230.0" fitWidth="279.0">
                            <image>
-                              <Image url="@specialpackage4.png" />
+                              <Image url="@../specialpackage4.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="228.0" fitWidth="285.0">
                            <image>
-                              <Image url="@specialpackage5.png" />
+                              <Image url="@../specialpackage5.png" />
                            </image>
                         </ImageView>
                      </HBox>

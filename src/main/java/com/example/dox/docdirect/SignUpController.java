@@ -104,9 +104,11 @@ public class SignUpController {
     }
 
     private boolean saveUserToDatabase(String phoneNumber, String name, String email, String password, String dateOfBirth, String gender) {
+        int userId = -1;
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
              PreparedStatement preparedStatement = connection.prepareStatement(
-                     "INSERT INTO users (phonenumber, name, email, password, dateofbirth, gender, value) VALUES (?, ?, ?, ?, ?, ?, ?)")) {
+                     "INSERT INTO users (phonenumber, name, email, password, dateofbirth, gender, value) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                     PreparedStatement.RETURN_GENERATED_KEYS)) {
 
             preparedStatement.setString(1, phoneNumber);
             preparedStatement.setString(2, name);
@@ -117,6 +119,18 @@ public class SignUpController {
             preparedStatement.setInt(7, 0); // Assuming value is set to 0 for a new user.
 
             preparedStatement.executeUpdate();
+
+            // Retrieve the generated user ID
+            var rs = preparedStatement.getGeneratedKeys();
+            if (rs.next()) {
+                userId = rs.getInt(1);
+            }
+
+            // Create user-specific tables
+            if (phoneNumber != null ){
+                createUserSpecificTables(phoneNumber);
+            }
+
             return true;
         } catch (Exception e) {
             e.printStackTrace();
@@ -124,6 +138,44 @@ public class SignUpController {
         }
         return false;
     }
+
+    private void createUserSpecificTables(String phoneNumber) {
+        // Sanitize phoneNumber to use in table names
+        String sanitizedPhoneNumber = phoneNumber.replaceAll("[^a-zA-Z0-9]", "");
+        System.out.println("1");
+        // Updated Services Table
+        String servicesTableQuery = String.format(
+                "CREATE TABLE IF NOT EXISTS user_%s_services (" +
+                        "id INT AUTO_INCREMENT PRIMARY KEY, " +
+                        "service_name VARCHAR(100), " +
+                        "quantity INT, " +
+                        "price DECIMAL(10, 2))", sanitizedPhoneNumber);
+        // Updated Appointments Table
+        String appointmentsTableQuery = String.format(
+                "CREATE TABLE IF NOT EXISTS user_%s_appointments (" +
+                        "id INT AUTO_INCREMENT PRIMARY KEY, " +
+                        "phone_number VARCHAR(20), " +
+                        "appointment_date DATE, " +
+                        "appointment_time TIME, " +
+                        "doctor_name VARCHAR(100), " +
+                        "speciality VARCHAR(100), " +
+                        "taka DECIMAL(10, 2), " +
+                        "place VARCHAR(150))", sanitizedPhoneNumber);
+        System.out.println("2");
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD)) {
+            System.out.println("3");
+            // Execute the queries
+            connection.createStatement().execute(servicesTableQuery);
+            connection.createStatement().execute(appointmentsTableQuery);
+            System.out.println("4");
+            System.out.println("User-specific tables created successfully for phone number: " + phoneNumber);
+        } catch (Exception e) {
+            e.printStackTrace();
+            showAlert(Alert.AlertType.ERROR, "Table Creation Error", "Could not create user-specific tables.");
+        }
+    }
+
+
 
     private void clearFields() {
         tf_name.clear();
@@ -138,7 +190,7 @@ public class SignUpController {
     @FXML
     void handleLoginNavigation(ActionEvent event) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/dox/docdirect/login.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/dox/docdirect/login2.fxml"));
             AnchorPane root = fxmlLoader.load();
             Stage stage = (Stage) btn_login.getScene().getWindow();
             stage.setScene(new Scene(root));

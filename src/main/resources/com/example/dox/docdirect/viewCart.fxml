@@ -18,7 +18,7 @@
                 <Button fx:id="btn_doctor" layoutX="20.0" layoutY="232.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14;" text="Our Doctors" />
                 <Button fx:id="btn_contact" layoutX="20.0" layoutY="314.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14;" text="Contact" />
                 <Button fx:id="btn_about" layoutX="20.0" layoutY="403.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14;" text="About" />
-                <Button ellipsisString="" layoutX="26.0" layoutY="471.0" mnemonicParsing="false" text="Checkout" />
+                <Button layoutX="26.0" layoutY="471.0" mnemonicParsing="false" text="Checkout" />
             </children>
         </AnchorPane>
 
@@ -41,40 +41,33 @@
                                         <Font size="21.0" />
                                     </font>
                                 </Label>
-                                <ScrollPane layoutX="10.0" layoutY="113.0" prefHeight="250.0" prefWidth="858.0">
-                                    <content>
-                                        <TableView style="-fx-border-color: #c30186;">
-                                            <columns>
-                                                <TableColumn prefWidth="135.0" text="Appointment Date" />
-                                                <TableColumn prefWidth="153.0" text="Appointment Time" />
-                                                <TableColumn minWidth="0.0" prefWidth="173.0" text="Doctor Name" />
-                                                <TableColumn prefWidth="75.0" text="Taka" />
-                                                <TableColumn prefWidth="108.0" text="Place" />
-                                                <TableColumn prefWidth="108.0" text="Speciality" />
-                                                <TableColumn prefWidth="108.0" text="Options" />
-                                            </columns>
-                                        </TableView>
-                                    </content>
-                                </ScrollPane>
+                                  <TableView fx:id="appointmentTableView" layoutX="10.0" layoutY="113.0" prefHeight="228.0" prefWidth="846.0" style="-fx-border-color: #c30186;">
+                                      <columns>
+                                          <TableColumn fx:id="colAppointmentDate" prefWidth="135.0" text="Appointment Date" />
+                                          <TableColumn fx:id="colAppointmentTime" prefWidth="153.0" text="Appointment Time" />
+                                          <TableColumn fx:id="colDoctorName" prefWidth="173.0" text="Doctor Name" />
+                                          <TableColumn fx:id="colSpeciality" prefWidth="108.0" text="Speciality" />
+                                          <TableColumn fx:id="colTaka" prefWidth="75.0" text="Taka" />
+                                          <TableColumn fx:id="colPlace" prefWidth="108.0" text="Place" />
+                                          <TableColumn fx:id="colAppointmentOptions" prefWidth="90.0" text="Options" />
+                                      </columns>
+                                  </TableView>
 
                                 <!-- Service Details Section -->
-                                <Label layoutX="24.0" layoutY="540.0" style="-fx-text-fill: #c30186;" text="Service Details">
+                                <Label layoutX="10.0" layoutY="423.0" style="-fx-text-fill: #c30186;" text="Service Details">
                                     <font>
                                         <Font size="21.0" />
                                     </font>
                                 </Label>
-                                <ScrollPane layoutX="5.0" layoutY="416.0" prefHeight="248.0" prefWidth="692.0">
-                                    <content>
-                                        <TableView style="-fx-border-color: #c30186;">
-                                            <columns>
-                                                <TableColumn prefWidth="324.0" text="Service Name" />
-                                                <TableColumn prefWidth="126.0" text="Quantity" />
-                                                <TableColumn prefWidth="150.0" text="Taka" />
-                                                <TableColumn prefWidth="90.0" text="Options" />
-                                            </columns>
-                                        </TableView>
-                                    </content>
-                                </ScrollPane>
+                                  <TableView fx:id="serviceTableView" layoutX="5.0" layoutY="467.0" prefHeight="197.0" prefWidth="694.0" style="-fx-border-color: #c30186;">
+                                      <columns>
+                                          <TableColumn fx:id="colQuantity" prefWidth="126.0" text="Quantity" />
+                                          <TableColumn fx:id="colPrice" prefWidth="150.0" text="Taka" />
+                                          <TableColumn fx:id="colServiceOptions" prefWidth="90.0" text="Options" />
+                                          <TableColumn fx:id="colServiceName" prefWidth="324.0" text="Service Name" />
+                                      </columns>
+                                  </TableView>
+                        <Button fx:id="itmRemBtn" layoutX="14.0" layoutY="355.0" mnemonicParsing="false" text="Remove item(s)" />
                             </children>
                         </AnchorPane>
                     </content>

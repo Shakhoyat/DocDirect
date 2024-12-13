@@ -46,6 +46,7 @@ public class LoginController {
         }
 
         if (validateLogin(phoneNumber, password)) {
+            CurrentUser.setUserData(phoneNumber);
             switchToDashboard();
         } else {
             showAlert(Alert.AlertType.ERROR, "Login Failed", "Invalid phone number or password.");
