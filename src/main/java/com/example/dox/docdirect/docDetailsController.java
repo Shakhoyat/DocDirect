@@ -10,7 +10,6 @@ import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -19,7 +18,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class docDetailsController {
-
     @FXML
     private Button book_btn;
 
@@ -146,7 +144,6 @@ public class docDetailsController {
                 selectedDate = date2.getText();
             }
         }
-
         // Create an ArrayList and populate it
         ArrayList<String> data = new ArrayList<>();
         data.add(this.name.getText()); // Name
@@ -157,7 +154,6 @@ public class docDetailsController {
         data.add(selectedDate);        // Selected Date
         return data;
     }
-
     void storeDataToDB() {
         ArrayList<String> data = getData();
         String table = "user_" + CurrentUser.phoneNumber + "_appointments";
@@ -172,7 +168,6 @@ public class docDetailsController {
             statement.setString(5, data.get(2));
             statement.setString(6, data.get(3));
             int row = statement.executeUpdate();
-
             if (row > 0) {
                 System.out.println("Data inserted successfully");
             }
