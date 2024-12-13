@@ -82,11 +82,6 @@ public class membershipplan {
     private Stage stage;
     private Scene scene;
     private Parent root;
-
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/DocDirectDB";
-    private static final String DB_USERNAME = "skt_pie";
-    private static final String DB_PASSWORD = "12104053";
-
     @FXML
     private void initialize() {
         home.setOnAction(event -> switchScene(event, "dashboard.fxml"));
@@ -109,6 +104,9 @@ public class membershipplan {
         }
     }
 
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/DocDirectDB";
+    private static final String DB_USERNAME = "skt_pie";
+    private static final String DB_PASSWORD = "12104053";
     public void addPlanToCart(String planName, double price) {
         String phn = CurrentUser.phoneNumber;
         String table = "user_" + phn + "_services";
