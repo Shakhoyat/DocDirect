@@ -7,77 +7,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import java.sql.*;
 
 public class healthcheckuppackageController {
-        @FXML
-        private Button buy1;
-
-        @FXML
-        private Button buy10;
-
-        @FXML
-        private Button buy11;
-
-        @FXML
-        private Button buy2;
-
-        @FXML
-        private Button buy3;
-
-        @FXML
-        private Button buy4;
-
-        @FXML
-        private Button buy5;
-
-        @FXML
-        private Button buy6;
-
-        @FXML
-        private Button buy7;
-
-        @FXML
-        private Button buy8;
-
-        @FXML
-        private Button buy9;
-
-        @FXML
-        private Button cart1;
-
-        @FXML
-        private Button cart10;
-
-        @FXML
-        private Button cart11;
-
-        @FXML
-        private Button cart2;
-
-        @FXML
-        private Button cart3;
-
-        @FXML
-        private Button cart4;
-
-        @FXML
-        private Button cart5;
-
-        @FXML
-        private Button cart6;
-
-        @FXML
-        private Button cart7;
-
-        @FXML
-        private Button cart8;
-
-        @FXML
-        private Button cart9;
-
         @FXML
         private Button about;
 
@@ -106,7 +39,6 @@ public class healthcheckuppackageController {
         contact.setOnAction(event -> switchScene(event, "contact.fxml"));
 
     }
-
     private void switchScene(javafx.event.ActionEvent event, String fxmlFile) {
         try {
             root = FXMLLoader.load(getClass().getResource(fxmlFile));
@@ -189,7 +121,6 @@ public class healthcheckuppackageController {
     public void addPlan11ToCart() {
         addPlanToCart("Child Health Check(2 to 16 Years)",6200.0 );
     }
-
     }
 
 
