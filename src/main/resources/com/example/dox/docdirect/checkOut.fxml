@@ -4,30 +4,30 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="648.0" prefWidth="977.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.CheckOutController">
+<AnchorPane prefHeight="718.0" prefWidth="1134.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.CheckOutController">
    <children>
       <!-- Sidebar -->
-      <AnchorPane layoutX="-4.0" prefHeight="648.0" prefWidth="178.0" style="-fx-background-color: #c30186;">
+      <AnchorPane layoutX="-4.0" prefHeight="718.0" prefWidth="178.0" style="-fx-background-color: #c30186;">
          <children>
             <Button fx:id="btn_home" layoutX="20.0" layoutY="77.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14;" text="Home" />
             <Button fx:id="btn_service" layoutX="20.0" layoutY="150.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14;" text="Services" />
             <Button fx:id="btn_doctor" layoutX="20.0" layoutY="232.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14;" text="Our Doctors" />
             <Button fx:id="btn_contact" layoutX="20.0" layoutY="314.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14;" text="Contact" />
             <Button fx:id="btn_about" layoutX="20.0" layoutY="403.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14;" text="About" />
+            <Button layoutX="25.0" layoutY="472.0" mnemonicParsing="false" text="Cart" />
          </children>
       </AnchorPane>
 
       <!-- Scrollable Content Area -->
-      <AnchorPane layoutX="169.0" prefHeight="648.0" prefWidth="796.0">
+      <AnchorPane layoutX="169.0" prefHeight="718.0" prefWidth="966.0">
          <children>
-            <ScrollPane layoutX="0.0" layoutY="0.0" prefHeight="648.0" prefWidth="796.0">
+            <ScrollPane layoutX="0.0" layoutY="0.0" prefHeight="718.0" prefWidth="966.0">
                <content>
                   <AnchorPane minHeight="648.0" minWidth="796.0">
                      <children>
@@ -68,13 +68,7 @@
                               <Font size="21.0" />
                            </font>
                         </Label>
-                        <TableView layoutX="10.0" layoutY="271.0" prefHeight="250.0" prefWidth="788.0" style="-fx-border-color: #c30186;">
-                           <columns>
-                              <TableColumn prefWidth="135.0" text="Appointment Date" />
-                              <TableColumn prefWidth="153.0" text="Appointment Time" />
-                              <TableColumn minWidth="0.0" prefWidth="173.0" text="Doctor Name" />
-                           </columns>
-                        </TableView>
+                        <TableView fx:id="idtable" layoutX="10.0" layoutY="271.0" prefHeight="250.0" prefWidth="937.0" style="-fx-border-color: #c30186;" />
 
                         <!-- Service Details Section -->
                         <Label layoutX="24.0" layoutY="540.0" style="-fx-text-fill: #c30186;" text="Service Details">
@@ -82,16 +76,10 @@
                               <Font size="21.0" />
                            </font>
                         </Label>
-                        <TableView layoutX="10.0" layoutY="571.0" prefHeight="200.0" prefWidth="788.0" style="-fx-border-color: #c30186;">
-                           <columns>
-                              <TableColumn prefWidth="300.0" text="Service Name" />
-                              <TableColumn prefWidth="150.0" text="Quantity" />
-                              <TableColumn prefWidth="150.0" text="Taka" />
-                           </columns>
-                        </TableView>
+                        <TableView fx:id="idtable2" layoutX="10.0" layoutY="571.0" prefHeight="200.0" prefWidth="941.0" style="-fx-border-color: #c30186;" />
 
                         <!-- Price Summary Section -->
-                        <AnchorPane layoutX="534.0" layoutY="16.0" prefHeight="249.0" prefWidth="241.0" style="-fx-border-color: #c30186; -fx-border-width: 2;">
+                        <AnchorPane layoutX="706.0" layoutY="15.0" prefHeight="249.0" prefWidth="241.0" style="-fx-border-color: #c30186; -fx-border-width: 2;">
                            <children>
                               <Label layoutX="10.0" layoutY="10.0" style="-fx-text-fill: #c30186;" text="Price Summary">
                                  <font>

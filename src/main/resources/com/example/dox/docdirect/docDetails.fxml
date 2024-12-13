@@ -48,11 +48,20 @@
                                        </VBox.margin>
                                     </Label>
                                     <Label text="Consultation Fees:" />
-                                    <Label fx:id="fee" text="BDT 1800">
-                                       <font>
-                                          <Font name="System Bold" size="13.0" />
-                                       </font>
-                                    </Label>
+                                    <HBox>
+                                       <children>
+                                          <Label text="BDT ">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="fee" text="1800">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
                                  </children>
                               </VBox>
                               <VBox>
@@ -87,12 +96,12 @@
                                     <Insets bottom="20.0" right="5.0" />
                                  </HBox.margin>
                               </Label>
-                              <RadioButton mnemonicParsing="false" text="Online">
+                              <RadioButton fx:id="rdBtn1" mnemonicParsing="false" text="Online">
                                  <toggleGroup>
                                     <ToggleGroup fx:id="schedule" />
                                  </toggleGroup>
                               </RadioButton>
-                              <RadioButton mnemonicParsing="false" text="Ofline" toggleGroup="$schedule" />
+                              <RadioButton fx:id="rdBtn2" mnemonicParsing="false" text="Ofline" toggleGroup="$schedule" />
                            </children>
                         </HBox>
                         <Label layoutX="10.0" layoutY="28.0" text="Appointment Time ">

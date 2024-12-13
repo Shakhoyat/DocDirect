@@ -154,9 +154,8 @@ public class SignUpController {
         String appointmentsTableQuery = String.format(
                 "CREATE TABLE IF NOT EXISTS user_%s_appointments (" +
                         "id INT AUTO_INCREMENT PRIMARY KEY, " +
-                        "phone_number VARCHAR(20), " +
-                        "appointment_date DATE, " +
-                        "appointment_time TIME, " +
+                        "appointment_date VARCHAR(15), " +
+                        "appointment_time VARCHAR(15), " +
                         "doctor_name VARCHAR(100), " +
                         "speciality VARCHAR(100), " +
                         "taka DECIMAL(10, 2), " +

@@ -119,8 +119,10 @@ public class DoctorDataFetcher {
                         Doctor.Schedule schedule = new Doctor.Schedule();
 
                         schedule.date = scheduleObject.has("date") ? scheduleObject.get("date").getAsString() : "";
-                        schedule.time1 = scheduleObject.has("time1") ? scheduleObject.get("time1").getAsString() : "";
-                        schedule.time2 = scheduleObject.has("time2") ? scheduleObject.get("time2").getAsString() : "";
+                        String time = scheduleObject.has("time") ? scheduleObject.get("time").getAsString() : "";
+                        String[] times = time.split(",");
+                        schedule.time1 = times[0];
+                        schedule.time2 = times[1];
                         schedule.day = scheduleObject.has("day") ? scheduleObject.get("day").getAsString() : "";
 
                         doctor.schedule.add(schedule);
