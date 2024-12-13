@@ -26,7 +26,7 @@
                 <!-- Header -->
                 <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@logo.png" />
+                        <Image url="@../../image/Login/logo.png" />
                     </image>
                 </ImageView>
                 <Label layoutX="70.0" layoutY="20.0" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #EC407A;" text="DocDirect" />
@@ -35,7 +35,7 @@
                 <!-- Contact Details Section -->
                 <ImageView fitHeight="100.0" fitWidth="600.0" layoutX="20.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@getIntouchwithUs.png" />
+                        <Image url="@../../image/Contact/getIntouchwithUs.png" />
                     </image>
                 </ImageView>
                 <Label layoutX="50.0" layoutY="180.0" style="-fx-font-size: 14px;" text="Email: support@docdirectskt.com" />

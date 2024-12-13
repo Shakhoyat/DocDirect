@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 public class App extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("login2.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Myfxmls/login/login2.fxml"));
       //  Parent root = FXMLLoader.load(getClass().getResource("DoctorListingPage.fxml"));
 
         primaryStage.setTitle("DocDirect");

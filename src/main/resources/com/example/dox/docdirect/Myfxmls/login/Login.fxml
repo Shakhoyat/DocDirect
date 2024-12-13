@@ -18,7 +18,7 @@
          <children>
             <ImageView fitHeight="862.0" fitWidth="1162.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
-                  <Image url="@loginbackground1.jpeg" />
+                  <Image url="@../../image/Login/loginbackground1.jpeg" />
                </image>
             </ImageView>
             <HBox layoutX="294.0" layoutY="79.0" prefHeight="637.0" prefWidth="597.0" style="-fx-background-color: rgba(0, 0, 0, 0.8);">
@@ -27,7 +27,7 @@
                      <children>
                         <ImageView fitHeight="637.0" fitWidth="254.0" layoutX="1.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@login2.jpg" />
+                              <Image url="@../../image/Login/login2.jpg" />
                            </image>
                         </ImageView>
                      </children>

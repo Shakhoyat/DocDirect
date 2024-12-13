@@ -33,19 +33,19 @@
                         <Button layoutX="547.0" layoutY="320.0" mnemonicParsing="false" text="Add to Cart" />
                         <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../logo.png" />
+                                <Image url="@../../image/Login/logo.png" />
                             </image>
                         </ImageView>
                         <Label layoutX="34.0" layoutY="18.0" text="DocDirect" />
                         <Button layoutX="576.0" layoutY="14.0" mnemonicParsing="false" text="Book Appointment" />
                   <ImageView fitHeight="218.0" fitWidth="268.0" layoutX="51.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../specialpackage4.png" />
+                        <Image url="@../../image/Special_Package/specialpackage4.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="202.0" fitWidth="268.0" layoutX="406.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../specialpackage5.png" />
+                        <Image url="@../../image/Special_Package/specialpackage5.png" />
                      </image>
                   </ImageView>
                     </children>

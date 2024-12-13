@@ -25,7 +25,7 @@
             <!-- Header Section -->
             <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@logo.png" />
+                  <Image url="@../../image/Login/logo.png" />
                </image>
             </ImageView>
             <Label layoutX="60.0" layoutY="20.0" style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #C2185B;" text="DocDirect" />
@@ -38,21 +38,21 @@
             <!-- Service Images and Buttons -->
             <ImageView fitHeight="124.0" fitWidth="717.0" layoutX="20.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@consultation.png" />
+                  <Image url="@../../image/consultation/consultation.png" />
                </image>
             </ImageView>
             <Button fx:id="btn_consultations" layoutX="27.0" layoutY="250.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="109.0" style="-fx-background-color: #C2185B; -fx-text-fill: white; -fx-font-size: 12px;                 -fx-padding: 5 15 5 15; -fx-background-radius: 20;" text="Read More" />
 
             <ImageView fitHeight="111.0" fitWidth="747.0" layoutX="13.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@healthpackages.png" />
+                  <Image url="@../../image/HealthPackages/healthpackages.png" />
                </image>
             </ImageView>
             <Button fx:id="btn_health_checkupnPackages" layoutX="19.0" layoutY="422.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="109.0" style="-fx-background-color: #C2185B; -fx-text-fill: white; -fx-font-size: 12px;                 -fx-padding: 5 15 5 15; -fx-background-radius: 20;" text="Read More" />
 
             <ImageView fitHeight="131.0" fitWidth="725.0" layoutX="20.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@membershipPlans.png" />
+                  <Image url="@../../image/membership_plans/membershipPlans.png" />
                </image>
             </ImageView>
             <Button fx:id="btn_membershipPlans" layoutX="23.0" layoutY="615.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="101.0" style="-fx-background-color: #C2185B; -fx-text-fill: white; -fx-font-size: 12px;                 -fx-padding: 5 15 5 15; -fx-background-radius: 20;" text="Read More" />

@@ -29,7 +29,7 @@
                         <Label layoutX="14.0" layoutY="70.0" text="Membership Plan" />
                         <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@logo.png" />
+                                <Image url="@../../image/Login/logo.png" />
                             </image>
                         </ImageView>
                         <Label layoutX="34.0" layoutY="18.0" text="DocDirect" />
@@ -45,16 +45,16 @@
                         <Button layoutX="649.0" layoutY="245.0" mnemonicParsing="false" text="Next" />
                   <ImageView fitHeight="179.0" fitWidth="200.0" layoutX="31.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@specialPlan1.png" />
+                        <Image url="@../../image/Special_plan/specialPlan1.png" />
                      </image></ImageView>
                   <ImageView fitHeight="179.0" fitWidth="183.0" layoutX="229.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@specialplan2.png" />
+                        <Image url="@../../image/Special_plan/specialplan2.png" />
                      </image></ImageView>
                   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fitHeight="195.0" fitWidth="200.0" layoutX="436.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@specialplan3.png" />
+                        <Image url="@../../image/Special_plan/specialplan3.png" />
                      </image></ImageView>
                     </children>
                 </AnchorPane>

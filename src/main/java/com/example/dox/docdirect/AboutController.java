@@ -38,12 +38,6 @@ public class AboutController {
     private Stage stage;
     private Scene scene;
 
-    /**
-     * Handles navigation between different scenes.
-     *
-     * @param event The button click event
-     * @param fxmlFile The FXML file for the new scene
-     */
     private void navigateToScene(ActionEvent event, String fxmlFile) {
         try {
             Parent root = FXMLLoader.load(getClass().getResource(fxmlFile));
@@ -57,42 +51,39 @@ public class AboutController {
     }
     @FXML
     private void handleHome(ActionEvent event) {
-        navigateToScene(event, "dashboard.fxml");
+        navigateToScene(event, "Myfxmls/dashboard/dashboard.fxml");
     }
 
     @FXML
     private void handleServices(ActionEvent event) {
-        navigateToScene(event, "services.fxml");
+        navigateToScene(event, "Myfxmls/services/services.fxml");
     }
 
     @FXML
     private void handleDoctors(ActionEvent event) {
-        navigateToScene(event, "DoctorListingPage.fxml");
+        navigateToScene(event, "Myfxmls/Doctorss/DoctorListingPage.fxml");
     }
 
     @FXML
     private void handleAbout(ActionEvent event) {
-        navigateToScene(event, "about.fxml");
+        navigateToScene(event, "Myfxmls/About/about.fxml");
     }
 
     @FXML
     private void handleContact(ActionEvent event) {
-        navigateToScene(event, "contact.fxml");
+        navigateToScene(event, "Myfxmls/contact/contact.fxml");
     }
 
     @FXML
     private void handleBookAppointment(ActionEvent event) {
-        navigateToScene(event, "DoctorListingPage.fxml");
+        navigateToScene(event, "Myfxmls/Doctorss/DoctorListingPage.fxml");
     }
 
     @FXML
     private void handleOurServices(ActionEvent event) {
-        navigateToScene(event, "services.fxml");
+        navigateToScene(event, "Myfxmls/services/services.fxml");
     }
 
-    /**
-     * Provides hover effect for better UX.
-     */
     @FXML
     private void initialize() {
         applyHoverEffect(btn_home);

@@ -31,7 +31,7 @@
                   <!-- Logo and Header -->
                   <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@logo.png" />
+                        <Image url="@../../image/Login/logo.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="50.0" layoutY="14.0" style="-fx-font-size: 18.0; -fx-font-weight: bold;" text="DocDirect" />
@@ -45,7 +45,7 @@
                      <Label layoutX="10.0" layoutY="20.0" prefHeight="200.0" prefWidth="335.0" text="01 &#10;In-person Consultation&#10;Meet our family medicine doctors, healthcare &#10;professionals, and visiting specialists at our &#10;flagship health center in Banani. They take the &#10;time to listen to you and understand your health&#10;care needs." />
                      <ImageView fitHeight="253.0" fitWidth="377.0" layoutX="381.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@inpersonconsultation.png" />
+                           <Image url="@../../image/consultation/inpersonconsultation.png" />
                         </image>
                      </ImageView>
                      <Button fx:id="book_appointment_btn1" layoutX="67.0" layoutY="207.0" mnemonicParsing="false" onAction="#handleDoctors" text="Book Appointment" />
@@ -55,7 +55,7 @@
                   <AnchorPane layoutY="350.0" prefHeight="250.0" prefWidth="650.0">
                      <ImageView fitHeight="291.0" fitWidth="388.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@videoconsultation.png" />
+                           <Image url="@../../image/consultation/videoconsultation.png" />
                         </image>
                      </ImageView>
                      <Label layoutX="401.0" layoutY="27.0" prefHeight="152.0" prefWidth="351.0" text="02&#10;Video Consultation&#10;Speak to a doctor anytime, anywhere. At DocDirect, &#10;our doctors are available for you via video consultation&#10;whenever you need it." />
@@ -67,7 +67,7 @@
                      <Label layoutX="15.0" layoutY="23.0" prefHeight="178.0" prefWidth="336.0" text="03&#10;Amar Jotno Plan (Video Consultation Plan)&#10;We have the right plan for you and your family.&#10;We are now offering video consultation &#10;packages, giving access to our internationally&#10;trained doctors, as many times as needed. &#10;Plans range from 3, 6, or 12 months at &#10;affordable prices." />
                      <ImageView fitHeight="261.0" fitWidth="390.0" layoutX="366.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
                         <image>
-                           <Image url="@amrjotno.png" />
+                           <Image url="@../../image/amar_jotno/amrjotno.png" />
                         </image>
                      </ImageView>
                      <Button fx:id="amr_jotno_plans" layoutX="77.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleAmrJotnoPlans" text="Amar Jotno Plans" />

@@ -27,7 +27,7 @@
                <children>
                   <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="10.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@logo.png" />
+                        <Image url="@../../image/Login/logo.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="50.0" layoutY="6.0" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #C30186;" text="DocDirect" />
@@ -39,7 +39,7 @@
             <Label layoutX="10.0" layoutY="60.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #C30186;" text="WHY DocDirect" />
             <ImageView fitHeight="281.0" fitWidth="530.0" layoutX="10.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@whyweexist.png" />
+                  <Image url="@../../image/About/whyweexist.png" />
                </image>
             </ImageView>
             <Label layoutX="583.0" layoutY="109.0" prefHeight="32.0" prefWidth="162.0" style="-fx-font-size: 14px; -fx-text-fill: #666666;" text="Departments: 27" />
@@ -49,12 +49,12 @@
             <!-- Images and Call-to-Action Section -->
             <ImageView fitHeight="319.0" fitWidth="452.0" layoutX="27.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@docwholistens.png" />
+                  <Image url="@../../image/About/docwholistens.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="184.0" fitWidth="300.0" layoutX="479.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@diagnosis_can_trust.png" />
+                  <Image url="@../../image/About/diagnosis_can_trust.png" />
                </image>
             </ImageView>
             <Button fx:id="btn_ourServices" layoutX="488.0" layoutY="521.0" mnemonicParsing="false" onAction="#handleOurServices" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #C30186; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 15;" text="Our Services →" />

@@ -1,5 +1,5 @@
 .root {
-    -fx-background-image: url("/home/skt_pie/IdeaProjects/DocDirect/src/main/resources/com/example/dox/docdirect"); /* Add your background image */
+    -fx-background-image: url("/com/example/dox/docdirect"); /* Add your background image */
     -fx-background-size: cover;
     -fx-background-position: center;
     -fx-font-family: "Arial";

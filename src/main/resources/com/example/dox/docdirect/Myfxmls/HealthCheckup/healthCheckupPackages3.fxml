@@ -36,24 +36,24 @@
                         <Button layoutX="642.0" layoutY="391.0" mnemonicParsing="false" text="Next.." />
                         <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../logo.png" />
+                                <Image url="@../../image/Login/logo.png" />
                             </image>
                         </ImageView>
                         <Label layoutX="34.0" layoutY="18.0" text="DocDirect" />
                         <Button layoutX="576.0" layoutY="14.0" mnemonicParsing="false" text="Book Appointment" />
                   <ImageView fitHeight="180.0" fitWidth="191.0" layoutX="10.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../specialpackage1.png" />
+                        <Image url="@../../image/Special_Package/specialpackage1.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="175.0" fitWidth="191.0" layoutX="229.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../specialpackage2.png" />
+                        <Image url="@../../image/Special_Package/specialpackage2.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="150.0" fitWidth="161.0" layoutX="454.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../specialpackage3.png" />
+                        <Image url="@../../image/Special_Package/specialpackage3.png" />
                      </image>
                   </ImageView>
                     </children>

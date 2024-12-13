@@ -29,7 +29,7 @@
                         <Label layoutX="14.0" layoutY="70.0" text="Membership Plan" />
                         <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@logo.png" />
+                                <Image url="@../../image/Login/logo.png" />
                             </image>
                         </ImageView>
                         <Label layoutX="34.0" layoutY="18.0" text="DocDirect" />
@@ -47,17 +47,17 @@
                         <ImageView fitHeight="52.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fitHeight="252.0" fitWidth="241.0" layoutX="16.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@AmarJotnoPlan3.png" />
+                        <Image url="@../../image/amar_jotno/AmarJotnoPlan3.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="252.0" fitWidth="341.0" layoutX="257.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@AmarJotnoPlan2.png" />
+                        <Image url="@../../image/amar_jotno/AmarJotnoPlan2.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="277.0" fitWidth="262.0" layoutX="556.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@AmarJotnoPlan1.png" />
+                        <Image url="@../../image/amar_jotno/AmarJotnoPlan1.png" />
                      </image>
                   </ImageView>
                     </children>
