@@ -175,29 +175,18 @@ public class healthcheckuppackageController {
     }
 
     public void addPlan7ToCart() {
-        addPlanToCart("12 Months Video Consultation Plan", 6250.0);
-    }
-
-    public void addPlan8ToCart() {
-        addPlanToCart("6 Months Video Consultation Plan", 5050.0);
-    }
-
-    public void addPlan9ToCart() {
-        addPlanToCart("3 Months Video Consultation Plan",3850.0 );
-    }
-    public void addPlan10ToCart() {
         addPlanToCart("Full Body Health Check",9900.0 );
     }
-    public void addPlan11ToCart() {
+    public void addPlan8ToCart() {
         addPlanToCart("Home Health Check",8900.0 );
     }
-    public void addPlan12ToCart() {
+    public void addPlan9ToCart() {
         addPlanToCart("Comprehensive Cardiac and Hypertension Health Check",24900.0 );
     }
-    public void addPlan13ToCart() {
+    public void addPlan10ToCart() {
         addPlanToCart("Comprehensive Diabetics Health Check",25800.0 );
     }
-    public void addPlan14ToCart() {
+    public void addPlan11ToCart() {
         addPlanToCart("Child Health Check(2 to 16 Years)",6200.0 );
     }
 

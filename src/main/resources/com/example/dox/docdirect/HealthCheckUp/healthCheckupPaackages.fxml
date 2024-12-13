@@ -54,10 +54,10 @@
                         </ImageView>
                      </HBox>
                      <Button fx:id="buy1" layoutX="14.0" layoutY="365.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart1" layoutX="124.0" layoutY="365.0" mnemonicParsing="false" text="Add to Cart" />
+                     <Button fx:id="cart1" layoutX="124.0" layoutY="365.0" mnemonicParsing="false" onAction="#addPlan1ToCart" text="Add to Cart" />
                      <Button fx:id="buy2" layoutX="254.0" layoutY="365.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart2" layoutX="350.0" layoutY="365.0" mnemonicParsing="false" text="Add to Cart" />
-                     <Button fx:id="cart3" layoutX="591.0" layoutY="365.0" mnemonicParsing="false" text="Add to Cart" />
+                     <Button fx:id="cart2" layoutX="350.0" layoutY="365.0" mnemonicParsing="false" onAction="#addPlan2ToCart" text="Add to Cart" />
+                     <Button fx:id="cart3" layoutX="591.0" layoutY="365.0" mnemonicParsing="false" onAction="#addPlan3ToCart" text="Add to Cart" />
                      <Button fx:id="buy3" layoutX="497.0" layoutY="365.0" mnemonicParsing="false" text="Buy Now" />
                   </children>
                </AnchorPane>
@@ -88,11 +88,11 @@
                         </ImageView>
                      </HBox>
                      <Button fx:id="buy4" layoutX="26.0" layoutY="310.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart4" layoutX="120.0" layoutY="310.0" mnemonicParsing="false" text="Add to Cart" />
+                     <Button fx:id="cart4" layoutX="120.0" layoutY="310.0" mnemonicParsing="false" onAction="#addPlan4ToCart" text="Add to Cart" />
                      <Button fx:id="buy5" layoutX="263.0" layoutY="310.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart5" layoutX="364.0" layoutY="310.0" mnemonicParsing="false" text="Add to Cart" />
+                     <Button fx:id="cart5" layoutX="364.0" layoutY="310.0" mnemonicParsing="false" onAction="#addPlan5ToCart" text="Add to Cart" />
                      <Button fx:id="buy6" layoutX="520.0" layoutY="310.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart6" layoutX="634.0" layoutY="310.0" mnemonicParsing="false" text="Add to Cart" />
+                     <Button fx:id="cart6" layoutX="634.0" layoutY="310.0" mnemonicParsing="false" onAction="#addPlan6ToCart" text="Add to Cart" />
                   </children>
                </AnchorPane>
 
@@ -122,11 +122,11 @@
                         </font>
                      </Label>
                      <Button fx:id="buy7" layoutX="27.0" layoutY="294.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart7" layoutX="121.0" layoutY="294.0" mnemonicParsing="false" text="Add to Cart" />
+                     <Button fx:id="cart7" layoutX="121.0" layoutY="294.0" mnemonicParsing="false" onAction="#addPlan7ToCart" text="Add to Cart" />
                      <Button fx:id="buy8" layoutX="278.0" layoutY="294.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart8" layoutX="376.0" layoutY="294.0" mnemonicParsing="false" text="Add to Cart" />
+                     <Button fx:id="cart8" layoutX="376.0" layoutY="294.0" mnemonicParsing="false" onAction="#addPlan8ToCart" text="Add to Cart" />
                      <Button fx:id="buy9" layoutX="543.0" layoutY="294.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart9" layoutX="649.0" layoutY="294.0" mnemonicParsing="false" text="Add to Cart" />
+                     <Button fx:id="cart9" layoutX="649.0" layoutY="294.0" mnemonicParsing="false" onAction="#addPlan9ToCart" text="Add to Cart" />
                   </children>
                </AnchorPane>
 
@@ -151,9 +151,9 @@
                         </ImageView>
                      </HBox>
                      <Button fx:id="buy10" layoutX="39.0" layoutY="320.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart10" layoutX="155.0" layoutY="320.0" mnemonicParsing="false" text="Add to Cart" />
+                     <Button fx:id="cart10" layoutX="155.0" layoutY="320.0" mnemonicParsing="false" onAction="#addPlan10ToCart" text="Add to Cart" />
                      <Button fx:id="buy11" layoutX="314.0" layoutY="320.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart11" layoutX="476.0" layoutY="320.0" mnemonicParsing="false" text="Add to Cart" />
+                     <Button fx:id="cart11" layoutX="476.0" layoutY="320.0" mnemonicParsing="false" onAction="#addPlan11ToCart" text="Add to Cart" />
                   </children>
                </AnchorPane>
             </VBox>
