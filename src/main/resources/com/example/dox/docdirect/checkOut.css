@@ -1,0 +1,12 @@
+.red-cross-button {
+    -fx-background-color: red;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 0 5 0 5;
+    -fx-cursor: hand;
+}
+
+.red-cross-button:hover {
+    -fx-background-color: darkred;
+}

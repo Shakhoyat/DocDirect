@@ -46,7 +46,6 @@ public class LoginController {
         }
 
         if (validateLogin(phoneNumber, password)) {
-            CurrentUser.setUserData(phoneNumber);
             switchToDashboard();
         } else {
             showAlert(Alert.AlertType.ERROR, "Login Failed", "Invalid phone number or password.");
@@ -62,7 +61,16 @@ public class LoginController {
             preparedStatement.setString(2, password);
             ResultSet resultSet = preparedStatement.executeQuery();
 
-            return resultSet.next();
+            boolean isValid = resultSet.next();
+            if (isValid) {
+                String name=resultSet.getString("name");
+                String email=resultSet.getString("email");
+                String dateofbirth=resultSet.getString("dateofbirth");
+                String gender=resultSet.getString("gender");
+                CurrentUser.setUserData(phoneNumber,name,email,dateofbirth,gender);
+            }
+
+            return isValid;
         } catch (Exception e) {
             e.printStackTrace();
             showAlert(Alert.AlertType.ERROR, "Database Error", "An error occurred while connecting to the database.");

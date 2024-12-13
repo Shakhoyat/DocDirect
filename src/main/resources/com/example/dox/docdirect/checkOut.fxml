@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="718.0" prefWidth="1134.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.CheckOutController">
+<AnchorPane prefHeight="718.0" prefWidth="1134.0" style="-fx-background-color: #ffffff;" stylesheets="@checkOut.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.CheckOutController">
    <children>
       <!-- Sidebar -->
       <AnchorPane layoutX="-4.0" prefHeight="718.0" prefWidth="178.0" style="-fx-background-color: #c30186;">
@@ -48,15 +48,18 @@
                            </font>
                         </Label>
                         <Label layoutX="285.0" layoutY="97.0" style="-fx-text-fill: #000000;" text="Phone Number" />
-                        <Label fx:id="id_phone" layoutX="296.0" layoutY="121.0" style="-fx-text-fill: #000000;" text="01303488507" />
+                        <Label fx:id="id_phone" layoutX="296.0" layoutY="121.0" style="-fx-text-fill: #000000;" text="01303488507">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
                         <Label layoutX="29.0" layoutY="148.0" style="-fx-text-fill: #000000;" text="Email" />
-                        <Label layoutX="38.0" layoutY="173.0" style="-fx-text-fill: #000000;" text="shakoyatsujon@gmail.com">
+                        <Label fx:id="id_email" layoutX="38.0" layoutY="173.0" style="-fx-text-fill: #000000;" text="shakoyatsujon@gmail.com">
                            <font>
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </Label>
                         <Label layoutX="298.0" layoutY="148.0" style="-fx-text-fill: #000000;" text="Date of Birth" />
-                        <Label layoutX="298.0" layoutY="173.0" style="-fx-text-fill: #000000;" text="01-03-2002">
+                        <Label fx:id="id_dateOfBirth" layoutX="298.0" layoutY="173.0" style="-fx-text-fill: #000000;" text="01-03-2002">
                            <font>
                               <Font name="System Bold" size="13.0" />
                            </font>
@@ -87,11 +90,11 @@
                                  </font>
                               </Label>
                               <Label layoutX="10.0" layoutY="40.0" style="-fx-text-fill: #000000;" text="Appointment" />
-                              <Label fx:id="lbl_appointmentCost" layoutX="150.0" layoutY="40.0" style="-fx-text-fill: #000000;" text="BDT 5,900" />
+                              <Label fx:id="lbl_appointmentCost" layoutX="160.0" layoutY="40.0" style="-fx-text-fill: #000000;" text=" 5,900" />
                               <Label layoutX="10.0" layoutY="70.0" style="-fx-text-fill: #000000;" text="Service" />
-                              <Label fx:id="lbl_ServiceCost" layoutX="150.0" layoutY="70.0" style="-fx-text-fill: #000000;" text="BDT 3,850" />
+                              <Label fx:id="lbl_ServiceCost" layoutX="160.0" layoutY="70.0" style="-fx-text-fill: #000000;" text=" 3,850" />
                               <Label layoutX="10.0" layoutY="100.0" style="-fx-text-fill: #000000;" text="Sub Total" />
-                              <Label fx:id="lbl_subTotalCost" layoutX="150.0" layoutY="100.0" style="-fx-text-fill: #000000;" text="BDT 9,750" />
+                              <Label fx:id="lbl_subTotalCost" layoutX="160.0" layoutY="100.0" style="-fx-text-fill: #000000;" text=" 9,750" />
                               <Label layoutX="10.0" layoutY="130.0" style="-fx-text-fill: #000000;" />
                               <Button fx:id="btn_payNow" layoutX="41.0" layoutY="205.0" prefWidth="160.0" style="-fx-background-color: #c30186; -fx-text-fill: white; -fx-font-size: 14;" text="Pay Now" />
                               <RadioButton layoutX="14.0" layoutY="179.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="11.0" />
@@ -100,6 +103,9 @@
                                     <Image url="@payLogo.png" />
                                  </image></ImageView>
                               <Button fx:id="btn_cart" layoutX="84.0" layoutY="126.0" mnemonicParsing="false" text="View Cart" />
+                              <Label fx:id="lbl_appointmentCost1" layoutX="129.0" layoutY="40.0" style="-fx-text-fill: #000000;" text="BDT" />
+                              <Label fx:id="lbl_appointmentCost11" layoutX="129.0" layoutY="70.0" style="-fx-text-fill: #000000;" text="BDT" />
+                              <Label fx:id="lbl_appointmentCost111" layoutX="129.0" layoutY="100.0" style="-fx-text-fill: #000000;" text="BDT" />
                            </children>
                         </AnchorPane>
 
