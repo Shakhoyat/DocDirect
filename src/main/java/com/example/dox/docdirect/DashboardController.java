@@ -1,5 +1,6 @@
 package com.example.dox.docdirect;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -11,6 +12,12 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class DashboardController {
+
+    @FXML
+    private Button btn_cart;
+
+    @FXML
+    private Button btn_logout;
 
     @FXML
     private Button aboutButton;
@@ -35,9 +42,8 @@ public class DashboardController {
 
     @FXML
     private void initialize() {
-        // Button action for "Home"
-       // homeButton.setOnAction(event -> switchScene("dashboard.fxml", "Home"));
 
+        btn_cart.setOnAction(event->switchScene("Myfxmls/myCart/viewCart.fxml","My Cart"));
         // Button action for "Services"
         servicesButton1.setOnAction(event -> switchScene("Myfxmls/services/services.fxml", "Services"));
 
@@ -55,6 +61,17 @@ public class DashboardController {
 
         // Button action for "Book an Appointment"
         bookAppointmentButton.setOnAction(event -> switchScene("Myfxmls/Doctorss/DoctorListingPage.fxml", "Book an Appointment"));
+
+        btn_logout.setOnAction(event -> {
+            // Show logout success message
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Logout");
+            alert.setHeaderText(null);
+            alert.setContentText("Logout successful!");
+            alert.showAndWait();
+            switchScene("Myfxmls/login/login2.fxml", "Login");
+
+        });
     }
 
     private void switchScene(String fxmlFileName, String title) {

@@ -12,10 +12,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 
 public class LoginController {
 
@@ -53,29 +50,62 @@ public class LoginController {
     }
 
     private boolean validateLogin(String phoneNumber, String password) {
+        // Validate user input before querying the database
+        if (phoneNumber.isEmpty() || password.isEmpty()) {
+            showAlert(Alert.AlertType.WARNING, "Validation Error", "Phone number and password cannot be empty.");
+            return false;
+        }
+
+        // Ensure phone number format is valid
+        if (!phoneNumber.matches("\\d{11}")) {
+            showAlert(Alert.AlertType.WARNING, "Validation Error", "Phone number must be exactly 11 digits.");
+            return false;
+        }
+
+        // Ensure password meets basic requirements
+        if (password.length() < 8) {
+            showAlert(Alert.AlertType.WARNING, "Validation Error", "Password must be at least 8 characters long.");
+            return false;
+        }
+
+        // Try to connect to the database and validate credentials
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
              PreparedStatement preparedStatement = connection.prepareStatement(
                      "SELECT * FROM users WHERE phonenumber = ? AND password = ?")) {
+
+            // Set query parameters
             preparedStatement.setString(1, phoneNumber);
             preparedStatement.setString(2, password);
             ResultSet resultSet = preparedStatement.executeQuery();
 
-            boolean isValid = resultSet.next();
-            if (isValid) {
-                String name=resultSet.getString("name");
-                String email=resultSet.getString("email");
-                String dateofbirth=resultSet.getString("dateofbirth");
-                String gender=resultSet.getString("gender");
-                CurrentUser.setUserData(phoneNumber,name,email,dateofbirth,gender);
+            // Check if login is valid
+            if (resultSet.next()) {
+                // Retrieve user data
+                String name = resultSet.getString("name");
+                String email = resultSet.getString("email");
+                String dateOfBirth = resultSet.getString("dateofbirth");
+                String gender = resultSet.getString("gender");
+
+                // Set the current user
+                CurrentUser.setUserData(phoneNumber, name, email, dateOfBirth, gender);
+
+                // Show success feedback
+                showAlert(Alert.AlertType.INFORMATION, "Login Successful", "Welcome, " + name + "!");
+                return true;
+            } else {
+                // Show failure feedback
+                showAlert(Alert.AlertType.ERROR, "Login Failed", "Invalid phone number or password. Please try again.");
+                return false;
             }
 
-            return isValid;
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
-            showAlert(Alert.AlertType.ERROR, "Database Error", "An error occurred while connecting to the database.");
+            showAlert(Alert.AlertType.ERROR, "Database Error",
+                    "An error occurred while connecting to the database. Please check your internet connection or try again later.");
+            return false;
         }
-        return false;
     }
+
 
     private void switchToDashboard() {
         try {
