@@ -80,28 +80,41 @@ public class SignUpController {
     }
 
     private boolean validateInput(String name, String email, String phoneNumber, String gender, String dateOfBirth, String password) {
+        // Check if any field is empty
         if (name.isEmpty() || email.isEmpty() || phoneNumber.isEmpty() || gender == null || dateOfBirth == null || password.isEmpty()) {
             showAlert(Alert.AlertType.ERROR, "Validation Error", "All fields must be filled.");
             return false;
         }
 
+        // Validate name: Only normal small or capital letters allowed
+        if (!name.matches("[a-zA-Z ]+")) {
+            showAlert(Alert.AlertType.ERROR, "Validation Error", "Name can only contain alphabets and spaces.");
+            return false;
+        }
+
+        // Validate email format
         if (!email.matches("^[\\w._%+-]+@[\\w.-]+\\.[a-zA-Z]{2,6}$")) {
-            showAlert(Alert.AlertType.ERROR, "Validation Error", "Invalid email format.");
+            showAlert(Alert.AlertType.ERROR, "Validation Error", "Invalid email format. Please enter a valid email (e.g., abc@def.com).");
             return false;
         }
 
-        if (!phoneNumber.matches("\\d{10}")) {
-            showAlert(Alert.AlertType.ERROR, "Validation Error", "Phone number must be 10 digits.");
+        // Validate phone number: Must be exactly 11 digits
+        if (!phoneNumber.matches("\\d{11}")) {
+            showAlert(Alert.AlertType.ERROR, "Validation Error", "Phone number must contain exactly 11 digits and only numeric characters.");
             return false;
         }
 
-        if (password.length() < 6) {
-            showAlert(Alert.AlertType.ERROR, "Validation Error", "Password must be at least 6 characters long.");
+        // Validate password: Must contain at least one letter, one number, one special character, and be at least 8 characters long
+        if (!password.matches("^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$")) {
+            showAlert(Alert.AlertType.ERROR, "Validation Error",
+                    "Password must be at least 8 characters long and include at least one letter, one number, and one special character (e.g., @, $, !).");
             return false;
         }
 
+        // Input is valid
         return true;
     }
+
 
     private boolean saveUserToDatabase(String phoneNumber, String name, String email, String password, String dateOfBirth, String gender) {
         int userId = -1;
@@ -125,7 +138,6 @@ public class SignUpController {
             if (rs.next()) {
                 userId = rs.getInt(1);
             }
-
             // Create user-specific tables
             if (phoneNumber != null ){
                 createUserSpecificTables(phoneNumber);
@@ -142,14 +154,17 @@ public class SignUpController {
     private void createUserSpecificTables(String phoneNumber) {
         // Sanitize phoneNumber to use in table names
         String sanitizedPhoneNumber = phoneNumber.replaceAll("[^a-zA-Z0-9]", "");
-        System.out.println("1");
+
         // Updated Services Table
         String servicesTableQuery = String.format(
                 "CREATE TABLE IF NOT EXISTS user_%s_services (" +
                         "id INT AUTO_INCREMENT PRIMARY KEY, " +
                         "service_name VARCHAR(100), " +
                         "quantity INT, " +
-                        "price DECIMAL(10, 2))", sanitizedPhoneNumber);
+                        "price DECIMAL(10, 2), " +
+                        "payment_status ENUM('PAID', 'UNPAID') DEFAULT 'UNPAID')",
+                sanitizedPhoneNumber);
+
         // Updated Appointments Table
         String appointmentsTableQuery = String.format(
                 "CREATE TABLE IF NOT EXISTS user_%s_appointments (" +
@@ -159,14 +174,15 @@ public class SignUpController {
                         "doctor_name VARCHAR(100), " +
                         "speciality VARCHAR(100), " +
                         "taka DECIMAL(10, 2), " +
-                        "place VARCHAR(150))", sanitizedPhoneNumber);
-        System.out.println("2");
+                        "place VARCHAR(150), " +
+                        "payment_status ENUM('PAID', 'UNPAID') DEFAULT 'UNPAID')",
+                sanitizedPhoneNumber);
+
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD)) {
-            System.out.println("3");
             // Execute the queries
             connection.createStatement().execute(servicesTableQuery);
             connection.createStatement().execute(appointmentsTableQuery);
-            System.out.println("4");
+
             System.out.println("User-specific tables created successfully for phone number: " + phoneNumber);
         } catch (Exception e) {
             e.printStackTrace();

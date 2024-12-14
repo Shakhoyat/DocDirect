@@ -96,7 +96,7 @@
                               <Label layoutX="10.0" layoutY="100.0" style="-fx-text-fill: #000000;" text="Sub Total" />
                               <Label fx:id="lbl_subTotalCost" layoutX="160.0" layoutY="100.0" style="-fx-text-fill: #000000;" text=" 9,750" />
                               <Label layoutX="10.0" layoutY="130.0" style="-fx-text-fill: #000000;" />
-                              <Button fx:id="btn_payNow" layoutX="41.0" layoutY="205.0" prefWidth="160.0" style="-fx-background-color: #c30186; -fx-text-fill: white; -fx-font-size: 14;" text="Pay Now" />
+                              <Button fx:id="btn_payNow" layoutX="41.0" layoutY="205.0" onAction="#handleProceedToCheckout" prefWidth="160.0" style="-fx-background-color: #c30186; -fx-text-fill: white; -fx-font-size: 14;" text="Pay Now" />
                               <RadioButton layoutX="14.0" layoutY="179.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="11.0" />
                               <ImageView fitHeight="32.0" fitWidth="195.0" layoutX="39.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
                                  <image>

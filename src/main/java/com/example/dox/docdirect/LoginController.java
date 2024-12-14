@@ -56,7 +56,6 @@ public class LoginController {
         try (Connection connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
              PreparedStatement preparedStatement = connection.prepareStatement(
                      "SELECT * FROM users WHERE phonenumber = ? AND password = ?")) {
-
             preparedStatement.setString(1, phoneNumber);
             preparedStatement.setString(2, password);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -102,7 +101,6 @@ public class LoginController {
             showAlert(Alert.AlertType.ERROR, "Navigation Error", "Could not load the dashboard.");
         }
     }
-
 
     private void showAlert(Alert.AlertType alertType, String title, String content) {
         Alert alert = new Alert(alertType);

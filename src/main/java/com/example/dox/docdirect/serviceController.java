@@ -52,7 +52,7 @@ public class serviceController {
         contact_btn.setOnAction(event -> switchScene(event, "Myfxmls/contact/contact.fxml"));
         btn_bookappointment.setOnAction(event -> switchScene(event, "Myfxmls/Doctorss/DoctorListingPage.fxml"));
         btn_consultations.setOnAction(event -> switchScene(event, "Myfxmls/consultation/consultation.fxml"));
-        btn_health_checkupnPackages.setOnAction(event -> switchScene(event, "Myfxmls/HealthCheckup/HealthCheckUp/healthCheckupPaackages.fxml"));
+        btn_health_checkupnPackages.setOnAction(event -> switchScene(event, "Myfxmls/HealthCheckup/healthCheckupPaackages.fxml"));
         btn_membershipPlans.setOnAction(event -> switchScene(event, "Myfxmls/MembershipPlans/membershipPlan.fxml"));
     }
 
