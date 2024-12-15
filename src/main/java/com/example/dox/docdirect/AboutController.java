@@ -13,7 +13,8 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class AboutController {
-
+    @FXML
+    private Button btn_mycart;
     @FXML
     private Button btn_home;
 
@@ -83,6 +84,10 @@ public class AboutController {
     private void handleOurServices(ActionEvent event) {
         navigateToScene(event, "Myfxmls/services/services.fxml");
     }
+    @FXML
+    private void handleMyCart(ActionEvent event) {
+        navigateToScene(event, "Myfxmls/myCart/viewCart.fxml");
+    }
 
     @FXML
     private void initialize() {
@@ -93,6 +98,7 @@ public class AboutController {
         applyHoverEffect(btn_contact);
         applyHoverEffect(btn_bookAppointment);
         applyHoverEffect(btn_ourServices);
+        applyHoverEffect(btn_mycart);
     }
 
     private void applyHoverEffect(Button button) {

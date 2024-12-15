@@ -26,6 +26,9 @@ public class healthcheckuppackageController {
         @FXML
         private Button service;
 
+    @FXML
+    private Button btn_mycart;
+
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -37,7 +40,7 @@ public class healthcheckuppackageController {
         doctors.setOnAction(event -> switchScene(event, "Myfxmls/Doctorss/DoctorListingPage.fxml"));
         about.setOnAction(event -> switchScene(event, "Myfxmls/About/about.fxml"));
         contact.setOnAction(event -> switchScene(event, "Myfxmls/contact/contact.fxml"));
-
+        btn_mycart.setOnAction(event -> switchScene(event, "Myfxmls/myCart/viewCart.fxml"));
     }
     private void switchScene(javafx.event.ActionEvent event, String fxmlFile) {
         try {

@@ -49,6 +49,8 @@ public class ContactController {
     @FXML
     private Button submitButton;
 
+    @FXML
+    private Button btn_mycart;
     // Utility method to change scenes
     private void changeScene(String fxmlFileName) {
         try {
@@ -70,7 +72,9 @@ public class ContactController {
         aboutButton.setOnAction(event -> changeScene("Myfxmls/About/about.fxml"));
         contactButton.setOnAction(event -> changeScene("Myfxmls/contact/contact.fxml"));
         bookAppointmentButton.setOnAction(event -> changeScene("Myfxmls/Doctorss/DoctorListingPage.fxml"));
+        btn_mycart.setOnAction(event -> changeScene("Myfxmls/myCart/viewCart.fxml"));
         submitButton.setOnAction(event -> handleSubmit());
+
     }
 
     private void handleSubmit() {

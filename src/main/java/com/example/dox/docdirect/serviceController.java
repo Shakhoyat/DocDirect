@@ -39,6 +39,10 @@ public class serviceController {
     @FXML
     private Button service_btn;
 
+
+    @FXML
+    private Button btn_mycart;
+
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -54,6 +58,8 @@ public class serviceController {
         btn_consultations.setOnAction(event -> switchScene(event, "Myfxmls/consultation/consultation.fxml"));
         btn_health_checkupnPackages.setOnAction(event -> switchScene(event, "Myfxmls/HealthCheckup/healthCheckupPaackages.fxml"));
         btn_membershipPlans.setOnAction(event -> switchScene(event, "Myfxmls/MembershipPlans/membershipPlan.fxml"));
+        btn_mycart.setOnAction(event -> switchScene(event, "Myfxmls/myCart/viewCart.fxml"));
+
     }
 
     private void switchScene(javafx.event.ActionEvent event, String fxmlFile) {

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
@@ -8,50 +9,48 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefWidth="970.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.membershipplan">
+<AnchorPane prefHeight="668.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.membershipplan">
     <children>
         <!-- Sidebar (Fixed) -->
         <AnchorPane prefHeight="857.0" prefWidth="180.0" style="-fx-background-color: #C30186;">
             <children>
-                <Button fx:id="home" layoutX="20.0" layoutY="74.0" mnemonicParsing="false" style="-fx-background-color: C30186; -fx-text-fill: White; -fx-font-size: 16px; -fx-pref-width: 150px; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Home" />
-                <Button fx:id="service" layoutX="20.0" layoutY="151.0" mnemonicParsing="false" style="-fx-background-color: c30186; -fx-text-fill: white; -fx-font-size: 16px; -fx-pref-width: 150px; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Services" />
-                <Button fx:id="doctor" layoutX="20.0" layoutY="214.0" mnemonicParsing="false" style="-fx-background-color: C10186; -fx-text-fill: white; -fx-font-size: 16px; -fx-pref-width: 150px; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Our Doctors" />
-                <Button fx:id="about" layoutX="20.0" layoutY="271.0" mnemonicParsing="false" style="-fx-background-color: c30186; -fx-text-fill: white; -fx-font-size: 16px; -fx-pref-width: 150px; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="About" />
-                <Button fx:id="contact" layoutX="20.0" layoutY="364.0" mnemonicParsing="false" style="-fx-background-color: c30186; -fx-text-fill: white; -fx-font-size: 16px; -fx-pref-width: 150px; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="Contact" />
+                <Button fx:id="home" layoutX="20.0" layoutY="148.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Home" />
+                <Button fx:id="service" layoutX="20.0" layoutY="248.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Services" />
+                <Button fx:id="doctor" layoutX="20.0" layoutY="351.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Our Doctors" />
+                <Button fx:id="about" layoutX="20.0" layoutY="447.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="About" />
+                <Button fx:id="contact" layoutX="20.0" layoutY="549.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Contact" />
+            <Button fx:id="mycart_btn" layoutX="26.0" layoutY="645.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="My Cart" />
             </children>
         </AnchorPane>
 
         <!-- Scrollable Main Content -->
-        <ScrollPane layoutX="180.0" layoutY="0.0" prefHeight="857.0" prefWidth="789.0">
+        <ScrollPane layoutX="180.0" prefHeight="857.0" prefWidth="1028.0">
             <content>
-                <VBox alignment="TOP_CENTER" prefWidth="620.0" spacing="10">
+                <VBox alignment="TOP_CENTER" prefWidth="1015.0" spacing="10">
                     <!-- First Section: Annual Membership Plan -->
                     <VBox spacing="5">
                         <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text="Membership Plan" />
-                        <Label style="-fx-font-size: 14px; -fx-text-fill: #2c3e50;" text="Our membership plans cover the healthcare needs of you and your family. The plans allow you to access doctors as many times as you need for a one-time purchase to proactively manage your health, be it yearly or for a certain period. Membership plans also cover a set of tests especially tailored by experienced doctors to meet your healthcare needs." wrapText="true" />
+                        <Label prefHeight="76.0" prefWidth="1001.0" style="-fx-font-size: 14px; -fx-text-fill: #2c3e50;" text="Our membership plans cover the healthcare needs of you and your family. The plans allow you to access doctors as many times as you need for a one-time purchase to proactively manage your health, be it yearly or for a certain period. Membership plans also cover a set of tests especially tailored&#10; by experienced doctors to meet your healthcare needs." wrapText="true" />
 
                         <!-- Annual Plan Images and Buttons -->
-                        <AnchorPane prefHeight="307.0" prefWidth="747.0">
+                        <AnchorPane prefHeight="281.0" prefWidth="1001.0">
                             <!-- First Image -->
-                            <ImageView fitHeight="200.0" fitWidth="200.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
+                            <ImageView fitHeight="277.0" fitWidth="286.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
                                 <image><Image url="@../../image/Annual_Membership/annualMembership1.png" /></image>
                             </ImageView>
-                            <Button fx:id="buy1" layoutX="10.0" layoutY="223.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;" text="Buy" />
-                            <Button fx:id="cart1" layoutX="10.0" layoutY="263.0" onAction="#addPlan1ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
+                            <Button fx:id="cart1" layoutX="25.0" layoutY="280.0" onAction="#addPlan1ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
 
                             <!-- Second Image -->
-                            <ImageView fitHeight="217.0" fitWidth="239.0" layoutX="233.0" layoutY="1.0" AnchorPane.leftAnchor="233.0" AnchorPane.topAnchor="1.0">
+                            <ImageView fitHeight="274.0" fitWidth="305.0" layoutX="317.0" layoutY="2.0" AnchorPane.leftAnchor="317.0" AnchorPane.topAnchor="2.0">
                                 <image><Image url="@../../image/Annual_Membership/AnnualMembership2.png" /></image>
                             </ImageView>
-                            <Button fx:id="buy2" layoutX="253.0" layoutY="223.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: black; -fx-font-weight: bold;" text="Buy" />
-                            <Button fx:id="cart2" layoutX="253.0" layoutY="263.0" onAction="#addPlan2ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
+                            <Button fx:id="cart2" layoutX="353.0" layoutY="280.0" onAction="#addPlan2ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
 
                             <!-- Third Image -->
-                            <ImageView fitHeight="219.0" fitWidth="250.0" layoutX="497.0" AnchorPane.leftAnchor="497.0" AnchorPane.topAnchor="0.0">
+                            <ImageView fitHeight="275.0" fitWidth="317.0" layoutX="684.0" layoutY="1.0" AnchorPane.leftAnchor="684.0" AnchorPane.topAnchor="1.0">
                                 <image><Image url="@../../image/Annual_Membership/AnnualMembership3.png" /></image>
                             </ImageView>
-                            <Button fx:id="buy3" layoutX="512.0" layoutY="223.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;" text="Buy" />
-                            <Button fx:id="cart3" layoutX="512.0" layoutY="263.0" onAction="#addPlan3ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
+                            <Button fx:id="cart3" layoutX="742.0" layoutY="280.0" onAction="#addPlan3ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
                         </AnchorPane>
                     </VBox>
 
@@ -59,27 +58,24 @@
                     <VBox prefHeight="333.0" prefWidth="747.0" spacing="5">
                         <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text="Special Plan" />
                         <Label text="Our special plans cover unique healthcare needs." />
-                        <AnchorPane prefHeight="350.0" prefWidth="620.0">
+                        <AnchorPane prefHeight="287.0" prefWidth="1015.0">
                             <!-- First Image -->
-                            <ImageView fitHeight="204.0" fitWidth="213.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
+                            <ImageView fitHeight="272.0" fitWidth="286.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
                                 <image><Image url="@../../image/Special_plan/specialPlan1.png" /></image>
                             </ImageView>
-                            <Button fx:id="buy4" layoutX="10.0" layoutY="223.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;" text="Buy" />
-                            <Button fx:id="cart4" layoutX="10.0" layoutY="263.0" onAction="#addPlan4ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
+                            <Button fx:id="cart4" layoutX="50.0" layoutY="275.0" onAction="#addPlan4ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
 
                             <!-- Second Image -->
-                            <ImageView fitHeight="218.0" fitWidth="232.0" layoutX="233.0" AnchorPane.leftAnchor="233.0" AnchorPane.topAnchor="0.0">
+                            <ImageView fitHeight="268.0" fitWidth="300.0" layoutX="334.0" AnchorPane.leftAnchor="334.0" AnchorPane.topAnchor="0.0">
                                 <image><Image url="@../../image/Special_plan/specialplan2.png" /></image>
                             </ImageView>
-                            <Button fx:id="buy5" layoutX="233.0" layoutY="223.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;" text="Buy" />
-                            <Button fx:id="cart5" layoutX="233.0" layoutY="263.0" onAction="#addPlan5ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
 
                             <!-- Third Image -->
-                            <ImageView fitHeight="230.0" fitWidth="237.0" layoutX="496.0" AnchorPane.leftAnchor="496.0" AnchorPane.topAnchor="0.0">
+                            <ImageView fitHeight="258.0" fitWidth="297.0" layoutX="704.0" AnchorPane.leftAnchor="704.0" AnchorPane.topAnchor="0.0">
                                 <image><Image url="@../../image/Special_plan/specialplan3.png" /></image>
                             </ImageView>
-                            <Button fx:id="buy6" layoutX="505.0" layoutY="223.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;" text="Buy" />
-                            <Button fx:id="cart6" layoutX="505.0" layoutY="263.0" onAction="#addPlan6ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
+                            <Button fx:id="cart6" layoutX="778.0" layoutY="263.0" onAction="#addPlan6ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
+                            <Button fx:id="cart5" layoutX="359.0" layoutY="276.0" onAction="#addPlan5ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
                         </AnchorPane>
                     </VBox>
 
@@ -89,27 +85,27 @@
                         <Label text="This plan offers video consultations with doctors." />
                         <AnchorPane prefHeight="350.0" prefWidth="620.0">
                             <!-- First Image -->
-                            <ImageView fitHeight="213.0" fitWidth="217.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
+                            <ImageView fitHeight="301.0" fitWidth="304.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
                                 <image><Image url="@../../image/amar_jotno/AmarJotnoPlan1.png" /></image>
                             </ImageView>
-                            <Button fx:id="buy7" layoutX="10.0" layoutY="237.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;" text="Buy" />
-                            <Button fx:id="cart7" layoutX="10.0" layoutY="276.0" onAction="#addPlan7ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
+                            <Button fx:id="cart7" layoutX="44.0" layoutY="305.0" onAction="#addPlan7ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
 
                             <!-- Second Image -->
-                            <ImageView fitHeight="210.0" fitWidth="232.0" layoutX="241.0" AnchorPane.leftAnchor="241.0" AnchorPane.topAnchor="0.0">
+                            <ImageView fitHeight="297.0" fitWidth="308.0" layoutX="324.0" layoutY="5.0" AnchorPane.leftAnchor="324.0" AnchorPane.topAnchor="5.0">
                                 <image><Image url="@../../image/amar_jotno/AmarJotnoPlan2.png" /></image>
                             </ImageView>
-                            <Button fx:id="buy8" layoutX="257.0" layoutY="237.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;" text="Buy" />
-                            <Button fx:id="cart8" layoutX="257.0" layoutY="276.0" onAction="#addPlan8ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
+                            <Button fx:id="cart8" layoutX="370.0" layoutY="305.0" onAction="#addPlan8ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
 
                             <!-- Third Image -->
-                            <ImageView fitHeight="230.0" fitWidth="249.0" layoutX="498.0" AnchorPane.leftAnchor="498.0" AnchorPane.topAnchor="0.0">
+                            <ImageView fitHeight="296.0" fitWidth="297.0" layoutX="695.0" layoutY="3.0" AnchorPane.leftAnchor="695.0" AnchorPane.topAnchor="3.0">
                                 <image><Image url="@../../image/amar_jotno/AmarJotnoPlan3.png" /></image>
                             </ImageView>
-                            <Button fx:id="buy9" layoutX="508.0" layoutY="237.0" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;" text="Buy" />
-                            <Button fx:id="cart9" layoutX="508.0" layoutY="276.0" onAction="#addPlan9ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
+                            <Button fx:id="cart9" layoutX="743.0" layoutY="302.0" onAction="#addPlan9ToCart" prefWidth="200.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Add to Cart" />
                         </AnchorPane>
                     </VBox>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
                 </VBox>
             </content>
         </ScrollPane>

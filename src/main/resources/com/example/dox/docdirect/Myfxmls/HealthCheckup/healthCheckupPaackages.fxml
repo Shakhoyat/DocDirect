@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
@@ -10,25 +11,29 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="1785.0" prefWidth="881.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.healthcheckuppackageController">
+<AnchorPane prefHeight="2000.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.healthcheckuppackageController">
    <children>
       <!-- Sidebar -->
-      <VBox alignment="TOP_CENTER" prefWidth="127.0" spacing="20.0" style="-fx-background-color: #f0f0f0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox alignment="TOP_CENTER" prefHeight="2000.0" prefWidth="182.0" spacing="50.0" style="-fx-background-color: #f0f0f0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button fx:id="home" text="Home" />
-            <Button fx:id="service" text="Services" />
-            <Button fx:id="doctors" text="Our Doctors" />
-            <Button fx:id="about" text="About" />
-            <Button fx:id="contact" text="Contact" />
+            <Button fx:id="home" layoutX="30.0" layoutY="100.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Home" />
+            <Button fx:id="service" layoutX="30.0" layoutY="100.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Services" />
+            <Button fx:id="doctors" layoutX="30.0" layoutY="100.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Our Doctors" />
+            <Button fx:id="about" layoutX="30.0" layoutY="100.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="About" />
+            <Button fx:id="contact" layoutX="30.0" layoutY="100.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Contact" />
+            <Button fx:id="btn_mycart" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="My Cart" />
          </children>
+         <padding>
+            <Insets top="200.0" />
+         </padding>
       </VBox>
 
       <!-- Scrollable Content -->
-      <ScrollPane fitToWidth="true" prefHeight="1785.0" prefWidth="753.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="127.0" AnchorPane.topAnchor="0.0">
+      <ScrollPane fitToWidth="true" layoutX="183.0" prefHeight="1785.0" prefWidth="1023.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="183.0" AnchorPane.topAnchor="0.0">
          <content>
             <VBox spacing="20.0">
                <!-- Section 1 -->
-               <AnchorPane prefHeight="403.0" prefWidth="745.0">
+               <AnchorPane prefHeight="516.0" prefWidth="1036.0">
                   <children>
                      <Label layoutX="8.0" layoutY="41.0" text="Health Checks and Packages">
                         <font>
@@ -36,29 +41,38 @@
                         </font>
                      </Label>
                      <Label layoutX="7.0" layoutY="84.0" prefHeight="54.0" prefWidth="738.0" text="We believe everyone should have access to convenient, affordable, and high-quality healthcare. Our health checks and&#10;packages help you stay on top of your health no matter your age, gender, or needs. Choose the one that is right for&#10; you." />
-                     <HBox layoutX="10.0" layoutY="175.0" spacing="20.0">
-                        <ImageView fitHeight="190.0" fitWidth="210.0">
-                           <image>
-                              <Image url="@../../image/HealthPackages/herHealth1.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="190.0" fitWidth="201.0">
-                           <image>
-                              <Image url="@../../image/HealthPackages/herHealth2.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="190.0" fitWidth="196.0">
-                           <image>
-                              <Image url="@../../image/HealthPackages/herHealth3.png" />
-                           </image>
-                        </ImageView>
+                     <HBox layoutX="7.0" layoutY="152.0" prefHeight="369.0" prefWidth="1068.0" spacing="20.0">
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <ImageView fitHeight="314.0" fitWidth="346.0">
+                                 <image>
+                                    <Image url="@../../image/HealthPackages/herHealth1.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="cart2" mnemonicParsing="false" onAction="#addPlan2ToCart" text="Add to Cart" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <ImageView fitHeight="315.0" fitWidth="339.0">
+                                 <image>
+                                    <Image url="@../../image/HealthPackages/herHealth2.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="cart3" mnemonicParsing="false" onAction="#addPlan3ToCart" text="Add to Cart" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <ImageView fitHeight="301.0" fitWidth="340.0">
+                                 <image>
+                                    <Image url="@../../image/HealthPackages/herHealth3.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="cart1" mnemonicParsing="false" onAction="#addPlan1ToCart" text="Add to Cart" />
+                           </children>
+                        </VBox>
                      </HBox>
-                     <Button fx:id="buy1" layoutX="14.0" layoutY="365.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart1" layoutX="124.0" layoutY="365.0" mnemonicParsing="false" onAction="#addPlan1ToCart" text="Add to Cart" />
-                     <Button fx:id="buy2" layoutX="254.0" layoutY="365.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart2" layoutX="350.0" layoutY="365.0" mnemonicParsing="false" onAction="#addPlan2ToCart" text="Add to Cart" />
-                     <Button fx:id="cart3" layoutX="591.0" layoutY="365.0" mnemonicParsing="false" onAction="#addPlan3ToCart" text="Add to Cart" />
-                     <Button fx:id="buy3" layoutX="497.0" layoutY="365.0" mnemonicParsing="false" text="Buy Now" />
                   </children>
                </AnchorPane>
 
@@ -70,63 +84,81 @@
                            <Font size="20.0" />
                         </font>
                      </Label>
-                     <HBox layoutX="1.0" layoutY="80.0" spacing="20.0">
-                        <ImageView fitHeight="227.0" fitWidth="215.0">
-                           <image>
-                              <Image url="@../../image/membership_plans/menHealthPackage1.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="224.0" fitWidth="240.0">
-                           <image>
-                              <Image url="@../../image/membership_plans/menHealthpackage2.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="228.0" fitWidth="239.0">
-                           <image>
-                              <Image url="@../../image/membership_plans/menHealthPackage3.png" />
-                           </image>
-                        </ImageView>
+                     <HBox layoutX="1.0" layoutY="80.0" prefHeight="356.0" prefWidth="1037.0" spacing="20.0">
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <ImageView fitHeight="307.0" fitWidth="344.0">
+                                 <image>
+                                    <Image url="@../../image/membership_plans/menHealthPackage1.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="cart4" mnemonicParsing="false" onAction="#addPlan4ToCart" text="Add to Cart" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <ImageView fitHeight="304.0" fitWidth="318.0">
+                                 <image>
+                                    <Image url="@../../image/membership_plans/menHealthpackage2.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="cart5" mnemonicParsing="false" onAction="#addPlan5ToCart" text="Add to Cart" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <ImageView fitHeight="316.0" fitWidth="335.0">
+                                 <image>
+                                    <Image url="@../../image/membership_plans/menHealthPackage3.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="cart6" mnemonicParsing="false" onAction="#addPlan6ToCart" text="Add to Cart" />
+                           </children>
+                        </VBox>
                      </HBox>
-                     <Button fx:id="buy4" layoutX="26.0" layoutY="310.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart4" layoutX="120.0" layoutY="310.0" mnemonicParsing="false" onAction="#addPlan4ToCart" text="Add to Cart" />
-                     <Button fx:id="buy5" layoutX="263.0" layoutY="310.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart5" layoutX="364.0" layoutY="310.0" mnemonicParsing="false" onAction="#addPlan5ToCart" text="Add to Cart" />
-                     <Button fx:id="buy6" layoutX="520.0" layoutY="310.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart6" layoutX="634.0" layoutY="310.0" mnemonicParsing="false" onAction="#addPlan6ToCart" text="Add to Cart" />
                   </children>
                </AnchorPane>
 
                <!-- Section 3 -->
-               <AnchorPane prefHeight="349.0" prefWidth="751.0">
+               <AnchorPane prefHeight="392.0" prefWidth="1075.0">
                   <children>
                      <HBox layoutX="10.0" layoutY="59.0" prefHeight="234.0" prefWidth="730.0" spacing="20.0">
-                        <ImageView fitHeight="235.0" fitWidth="225.0">
-                           <image>
-                              <Image url="@../../image/Special_Package/specialpackage1.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="230.0" fitWidth="234.0">
-                           <image>
-                              <Image url="@../../image/Special_Package/specialpackage2.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="234.0" fitWidth="233.0">
-                           <image>
-                              <Image url="@../../image/Special_Package/specialpackage3.png" />
-                           </image>
-                        </ImageView>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <ImageView fitHeight="345.0" fitWidth="327.0">
+                                 <image>
+                                    <Image url="@../../image/Special_Package/specialpackage1.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="cart7" mnemonicParsing="false" onAction="#addPlan7ToCart" text="Add to Cart" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <ImageView fitHeight="342.0" fitWidth="355.0">
+                                 <image>
+                                    <Image url="@../../image/Special_Package/specialpackage2.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="cart8" mnemonicParsing="false" onAction="#addPlan8ToCart" text="Add to Cart" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <ImageView fitHeight="334.0" fitWidth="297.0">
+                                 <image>
+                                    <Image url="@../../image/Special_Package/specialpackage3.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="cart9" mnemonicParsing="false" onAction="#addPlan9ToCart" text="Add to Cart" />
+                           </children>
+                        </VBox>
                      </HBox>
                      <Label layoutX="10.0" layoutY="7.0" text="Special Health Checks">
                         <font>
                            <Font size="20.0" />
                         </font>
                      </Label>
-                     <Button fx:id="buy7" layoutX="27.0" layoutY="294.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart7" layoutX="121.0" layoutY="294.0" mnemonicParsing="false" onAction="#addPlan7ToCart" text="Add to Cart" />
-                     <Button fx:id="buy8" layoutX="278.0" layoutY="294.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart8" layoutX="376.0" layoutY="294.0" mnemonicParsing="false" onAction="#addPlan8ToCart" text="Add to Cart" />
-                     <Button fx:id="buy9" layoutX="543.0" layoutY="294.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart9" layoutX="649.0" layoutY="294.0" mnemonicParsing="false" onAction="#addPlan9ToCart" text="Add to Cart" />
                   </children>
                </AnchorPane>
 
@@ -139,21 +171,27 @@
                         </font>
                      </Label>
                      <HBox layoutX="10.0" layoutY="71.0" spacing="20.0">
-                        <ImageView fitHeight="230.0" fitWidth="279.0">
-                           <image>
-                              <Image url="@../../image/Special_Package/specialpackage4.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="228.0" fitWidth="285.0">
-                           <image>
-                              <Image url="@../../image/Special_Package/specialpackage5.png" />
-                           </image>
-                        </ImageView>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <ImageView fitHeight="323.0" fitWidth="371.0">
+                                 <image>
+                                    <Image url="@../../image/Special_Package/specialpackage4.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="cart10" mnemonicParsing="false" onAction="#addPlan10ToCart" text="Add to Cart" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <ImageView fitHeight="324.0" fitWidth="377.0">
+                                 <image>
+                                    <Image url="@../../image/Special_Package/specialpackage5.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="cart11" mnemonicParsing="false" onAction="#addPlan11ToCart" text="Add to Cart" />
+                           </children>
+                        </VBox>
                      </HBox>
-                     <Button fx:id="buy10" layoutX="39.0" layoutY="320.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart10" layoutX="155.0" layoutY="320.0" mnemonicParsing="false" onAction="#addPlan10ToCart" text="Add to Cart" />
-                     <Button fx:id="buy11" layoutX="314.0" layoutY="320.0" mnemonicParsing="false" text="Buy Now" />
-                     <Button fx:id="cart11" layoutX="476.0" layoutY="320.0" mnemonicParsing="false" onAction="#addPlan11ToCart" text="Add to Cart" />
                   </children>
                </AnchorPane>
             </VBox>

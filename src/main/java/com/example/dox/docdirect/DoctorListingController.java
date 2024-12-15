@@ -22,6 +22,11 @@ public class DoctorListingController {
         private Scene scene;
         private Parent root;
         private int numColumns = 3;
+
+
+    @FXML
+    private Button btn_mycart;
+
         @FXML
         private Button about_btn;
         @FXML
@@ -43,7 +48,7 @@ public class DoctorListingController {
         doctor_btn.setOnAction(event -> switchScene(event, "Myfxmls/Doctorss/DoctorListingPage.fxml"));
         about_btn.setOnAction(event -> switchScene(event, "Myfxmls/About/about.fxml"));
         contact_btn.setOnAction(event -> switchScene(event, "Myfxmls/contact/contact.fxml"));
-
+        btn_mycart.setOnAction(event -> switchScene(event, "Myfxmls/myCart/viewCart.fxml"));
 
         String apiUrl = "https://api.myjson.online/v1/records/b9ee7919-1a34-4016-9d6d-a9d8484cd99e";
         List<DoctorDataFetcher.Doctor> doctors = DoctorDataFetcher.fetchDoctorsFromApi(apiUrl);

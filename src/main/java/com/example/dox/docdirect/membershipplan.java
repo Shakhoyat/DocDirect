@@ -12,64 +12,13 @@ import java.sql.*;
 
 public class membershipplan {
     @FXML
-    private Button buy1;
-
-    @FXML
-    private Button buy2;
-
-    @FXML
-    private Button buy3;
-
-    @FXML
-    private Button buy4;
-
-    @FXML
-    private Button buy5;
-
-    @FXML
-    private Button buy6;
-
-    @FXML
-    private Button buy7;
-
-    @FXML
-    private Button buy8;
-
-    @FXML
-    private Button buy9;
-
-    @FXML
-    private Button cart1;
-
-    @FXML
-    private Button cart2;
-
-    @FXML
-    private Button cart3;
-
-    @FXML
-    private Button cart4;
-
-    @FXML
-    private Button cart5;
-
-    @FXML
-    private Button cart6;
-
-    @FXML
-    private Button cart7;
-
-    @FXML
-    private Button cart8;
-
-    @FXML
-    private Button cart9;
-
-    @FXML
     private Button contact;
 
     @FXML
     private Button doctor;
+
+    @FXML
+    private Button mycart_btn;
 
     @FXML
     private Button home;
@@ -89,7 +38,7 @@ public class membershipplan {
         doctor.setOnAction(event -> switchScene(event, "Myfxmls/Doctorss/DoctorListingPage.fxml"));
         about.setOnAction(event -> switchScene(event, "Myfxmls/About/about.fxml"));
         contact.setOnAction(event -> switchScene(event, "Myfxmls/contact/contact.fxml"));
-
+        mycart_btn.setOnAction(event -> switchScene(event, "Myfxmls/myCart/viewCart.fxml"));
     }
 
     private void switchScene(javafx.event.ActionEvent event, String fxmlFile) {

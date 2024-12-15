@@ -6,58 +6,59 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="633.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.AboutController">
+<AnchorPane prefHeight="668.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.AboutController">
    <children>
       <!-- Sidebar -->
-      <AnchorPane prefHeight="633.0" prefWidth="162.0" style="-fx-background-color: #C30186;">
+      <AnchorPane prefHeight="749.0" prefWidth="162.0" style="-fx-background-color: #aa2679;">
          <children>
-            <Button fx:id="btn_home" layoutX="10.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleHome" prefWidth="130.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #C30186; -fx-font-weight: bold; -fx-background-radius: 15;" text="Home" />
-            <Button fx:id="btn_services" layoutX="10.0" layoutY="80.0" mnemonicParsing="false" onAction="#handleServices" prefWidth="130.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #C30186; -fx-font-weight: bold; -fx-background-radius: 15;" text="Services" />
-            <Button fx:id="btn_doctors" layoutX="10.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleDoctors" prefWidth="130.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #C30186; -fx-font-weight: bold; -fx-background-radius: 15;" text="Our Doctors" />
-            <Button fx:id="btn_about" layoutX="10.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleAbout" prefWidth="130.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #C30186; -fx-font-weight: bold; -fx-background-radius: 15;" text="About" />
-            <Button fx:id="btn_contact" layoutX="10.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleContact" prefWidth="130.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #C30186; -fx-font-weight: bold; -fx-background-radius: 15;" text="Contact" />
+            <Button fx:id="btn_home" layoutY="93.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Home" />
+            <Button fx:id="btn_services" layoutY="171.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Services" />
+            <Button fx:id="btn_doctors" layoutY="242.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Our Doctors" />
+            <Button fx:id="btn_about" layoutY="315.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="About" />
+            <Button fx:id="btn_contact" layoutY="390.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Contact" />
+            <Button fx:id="btn_mycart" layoutX="11.0" layoutY="482.0" mnemonicParsing="false" onAction="#handleMyCart" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="My Cart" />
          </children>
       </AnchorPane>
 
       <!-- Main Content Area -->
-      <AnchorPane layoutX="160.0" prefHeight="627.0" prefWidth="790.0" style="-fx-background-color: #FFFFFF;">
+      <AnchorPane layoutX="162.0" layoutY="2.0" prefHeight="747.0" prefWidth="1049.0" style="-fx-background-color: #FFFFFF;">
          <children>
             <!-- Header Section -->
-            <AnchorPane prefHeight="57.0" prefWidth="790.0" style="-fx-border-color: #C30186; -fx-border-width: 0 0 2 0;">
+            <AnchorPane prefHeight="58.0" prefWidth="972.0" style="-fx-border-color: #aa2679; -fx-border-width: 0 0 2 0;">
                <children>
-                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="10.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../image/Login/logo.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="50.0" layoutY="6.0" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #C30186;" text="DocDirect" />
-                  <Button fx:id="btn_bookAppointment" layoutX="586.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleDoctors" prefWidth="180.0" style="-fx-background-color: #C30186; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 15;" text="Book an Appointment →" />
+                  <Label layoutX="52.0" layoutY="18.0" prefHeight="32.0" prefWidth="107.0" style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #aa2679;" text="DocDirect" />
                </children>
             </AnchorPane>
 
             <!-- Content Section -->
-            <Label layoutX="10.0" layoutY="60.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #C30186;" text="WHY DocDirect" />
-            <ImageView fitHeight="281.0" fitWidth="530.0" layoutX="10.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+            <Label layoutX="14.0" layoutY="58.0" prefHeight="66.0" prefWidth="217.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #aa2679;" text="WHY DocDirect" />
+            <ImageView fitHeight="207.0" fitWidth="692.0" layoutX="27.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../image/About/whyweexist.png" />
                </image>
             </ImageView>
-            <Label layoutX="583.0" layoutY="109.0" prefHeight="32.0" prefWidth="162.0" style="-fx-font-size: 14px; -fx-text-fill: #666666;" text="Departments: 27" />
-            <Label layoutX="583.0" layoutY="147.0" prefHeight="22.0" prefWidth="91.0" style="-fx-font-size: 14px; -fx-text-fill: #666666;" text="Doctors: 86" />
-            <Label layoutX="583.0" layoutY="178.0" style="-fx-font-size: 14px; -fx-text-fill: #666666;" text="Patients Served: 7.34K" />
+            <Label layoutX="846.0" layoutY="194.0" prefHeight="32.0" prefWidth="136.0" style="-fx-font-size: 14px; -fx-text-fill: #666666;" text="Departments: 27" />
+            <Label layoutX="859.0" layoutY="235.0" prefHeight="22.0" prefWidth="91.0" style="-fx-font-size: 14px; -fx-text-fill: #666666;" text="Doctors: 86" />
+            <Label layoutX="841.0" layoutY="271.0" style="-fx-font-size: 14px; -fx-text-fill: #666666;" text="Patients Served: 7.34K" />
 
             <!-- Images and Call-to-Action Section -->
-            <ImageView fitHeight="319.0" fitWidth="452.0" layoutX="27.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="520.0" fitWidth="645.0" layoutX="14.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../image/About/docwholistens.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="184.0" fitWidth="300.0" layoutX="479.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="194.0" fitWidth="359.0" layoutX="666.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../image/About/diagnosis_can_trust.png" />
                </image>
             </ImageView>
-            <Button fx:id="btn_ourServices" layoutX="488.0" layoutY="521.0" mnemonicParsing="false" onAction="#handleOurServices" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #C30186; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 15;" text="Our Services →" />
+            <Button fx:id="btn_ourServices" layoutX="666.0" layoutY="674.0" mnemonicParsing="false" onAction="#handleOurServices" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: #C30186; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 15;" text="Our Services →" />
+            <Button fx:id="btn_bookAppointment" layoutX="883.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleDoctors" prefHeight="48.0" prefWidth="180.0" style="-fx-background-color: #aa2679; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 15;" text="Book an Appointment →" />
          </children>
       </AnchorPane>
    </children>

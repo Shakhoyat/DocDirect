@@ -40,9 +40,8 @@ public class ConsultationController {
         @FXML
         private Button services_btn;
 
-
-
-
+    @FXML
+    private Button mycart_btn;
 
     private Stage stage;
     private Scene scene;
@@ -91,6 +90,10 @@ public class ConsultationController {
     @FXML
     private void handleAmrJotnoPlans(ActionEvent event) {
         navigateToScene(event, "Myfxmls/MembershipPlans/membershipPlan3.fxml");
+    }
+    @FXML
+    private void handleMycart(ActionEvent event) {
+        navigateToScene(event, "Myfxmls/myCart/viewCart.fxml");
     }
 
 }

@@ -27,6 +27,9 @@ public class membershipPlan3Controller {
     @FXML
     private Button btn_home;
 
+    @FXML
+    private Button btn_mycart;
+
     private static final String DB_URL = "jdbc:mysql://localhost:3306/DocDirectDB";
     private static final String DB_USERNAME = "skt_pie";
     private static final String DB_PASSWORD = "12104053";
@@ -44,6 +47,8 @@ public class membershipPlan3Controller {
         btn_about.setOnAction(event -> switchScene(event, "Myfxmls/About/about.fxml"));
         btn_contact.setOnAction(event -> switchScene(event, "Myfxmls/contact/contact.fxml"));
         btn_bookAppointment.setOnAction(event -> switchScene(event, "Myfxmls/Doctorss/DoctorListingPage.fxml"));
+        btn_mycart.setOnAction(event -> switchScene(event, "Myfxmls/myCart/viewCart.fxml"));
+
     }
     private void switchScene(javafx.event.ActionEvent event, String fxmlFile) {
         try {
