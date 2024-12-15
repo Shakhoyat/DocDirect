@@ -8,25 +8,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="1700.0" prefWidth="1210.0" style="-fx-background-color: #aa2679;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.ConsultationController">
+<AnchorPane prefHeight="668.0" prefWidth="1210.0" style="-fx-background-color: #aa2679;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dox.docdirect.ConsultationController">
    <children>
       <!-- Sidebar -->
-      <AnchorPane prefHeight="918.0" prefWidth="187.0" style="-fx-background-color: #aa2679;">
+      <AnchorPane prefHeight="668.0" prefWidth="187.0" style="-fx-background-color: #aa2679;">
          <children>
             <VBox layoutX="27.0" layoutY="77.0" spacing="20.0" />
-            <Button fx:id="contact_btn" layoutX="33.0" layoutY="419.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Contact" />
-            <Button fx:id="btn_about" layoutX="27.0" layoutY="338.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="About" />
-            <Button fx:id="our_doctor_btn" layoutX="27.0" layoutY="253.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Our Doctors" />
-            <Button fx:id="services_btn" layoutX="27.0" layoutY="166.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Services" />
-            <Button fx:id="home_btn" layoutX="24.0" layoutY="86.0" mnemonicParsing="false" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Home" />
+            <Button fx:id="contact_btn" layoutX="33.0" layoutY="419.0" mnemonicParsing="false" onAction="#handleContact" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Contact" />
+            <Button fx:id="btn_about" layoutX="27.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleAbout" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="About" />
+            <Button fx:id="our_doctor_btn" layoutX="27.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleDoctors" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Our Doctors" />
+            <Button fx:id="services_btn" layoutX="27.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleOurServices" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Services" />
+            <Button fx:id="home_btn" layoutX="24.0" layoutY="86.0" mnemonicParsing="false" onAction="#handleHome" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Home" />
             <Button fx:id="mycart_btn" layoutX="33.0" layoutY="498.0" mnemonicParsing="false" onAction="#handleMycart" prefWidth="140.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="My Cart" />
          </children>
       </AnchorPane>
 
       <!-- Main Content -->
-      <ScrollPane fitToHeight="true" layoutX="186.0" prefHeight="1700.0" prefWidth="1025.0" vbarPolicy="ALWAYS">
+      <ScrollPane fitToHeight="true" layoutX="186.0" prefHeight="668.0" prefWidth="1025.0" vbarPolicy="ALWAYS">
          <content>
-            <AnchorPane prefHeight="950.0" prefWidth="1046.0">
+            <AnchorPane prefHeight="1700.0" prefWidth="1046.0">
                <children>
                   <!-- Logo and Header -->
                   <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
@@ -47,7 +47,7 @@
                            <Image url="@../../image/consultation/inpersonconsultation.png" />
                         </image>
                      </ImageView>
-                     <Button fx:id="book_appointment_btn1" layoutX="41.0" layoutY="287.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="177.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Book Appointment " />
+                     <Button fx:id="book_appointment_btn1" layoutX="41.0" layoutY="287.0" mnemonicParsing="false" onAction="#handleBookAppointment" prefHeight="40.0" prefWidth="177.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Book Appointment " />
                   </AnchorPane>
 
                   <!-- Amar Jotno Plan Section -->
@@ -58,9 +58,9 @@
                            <Image url="@../../image/amar_jotno/amrjotno.png" />
                         </image>
                      </ImageView>
-                     <Button fx:id="amr_jotno_plans" layoutX="104.0" layoutY="247.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Amar Jotno Plans" />
+                     <Button fx:id="amr_jotno_plans" layoutX="104.0" layoutY="247.0" mnemonicParsing="false" onAction="#handleAmrJotnoPlans" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Amar Jotno Plans" />
                   </AnchorPane>
-                  <Button fx:id="book_appointment_btn3" layoutX="773.0" layoutY="19.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="230.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Book Appointment Now" />
+                  <Button fx:id="book_appointment_btn3" layoutX="773.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleBookAppointment" prefHeight="40.0" prefWidth="230.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Book Appointment Now" />
 
                               <!-- Video Consultation Section -->
                   <AnchorPane layoutY="539.0" prefWidth="1044.0">
@@ -70,7 +70,7 @@
                         </image>
                      </ImageView>
                      <Label layoutX="579.0" layoutY="49.0" prefHeight="233.0" prefWidth="460.0" text="02&#10;Video Consultation&#10;Speak to a doctor anytime, anywhere. At DocDirect, &#10;our doctors are available for you via video consultation&#10;whenever you need it." />
-                     <Button fx:id="book_appoinbook_appointment_btn2tment_btn31" layoutX="701.0" layoutY="301.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Book Appointment" />
+                     <Button fx:id="book_appoinbook_appointment_btn2tment_btn31" layoutX="701.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleBookAppointment" prefHeight="40.0" prefWidth="193.0" style="-fx-background-color: #750d4d; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10 20 10 20; -fx-background-radius: 30;" text="Book Appointment" />
                   </AnchorPane>
                </children>
             </AnchorPane>

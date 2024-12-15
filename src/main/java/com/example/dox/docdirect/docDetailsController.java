@@ -77,12 +77,18 @@ public class docDetailsController {
 
     private ToggleGroup toggleGroup;
 
+    public String selectedSchedule = null;
+    public String time = null;
+
     private static final String DB_URL = "jdbc:mysql://localhost:3306/DocDirectDB";
     private static final String DB_USERNAME = "skt_pie";
     private static final String DB_PASSWORD = "12104053";
 
     @FXML
     public void initialize() {
+        if (schedule.getSelectedToggle() != null) {
+            selectedSchedule = (String) schedule.getSelectedToggle().getUserData();
+        }
         // Create a ToggleGroup and add all ToggleButtons to it
         toggleGroup = new ToggleGroup();
         time1_1.setToggleGroup(toggleGroup);
@@ -104,8 +110,19 @@ public class docDetailsController {
     }
     @FXML
     private void handleBookNow(ActionEvent event) {
-        storeDataToDB();
-        navigateToScene(event, "Myfxmls/checkOut/checkOut.fxml");
+//        System.out.println(time);
+//        System.out.println(selectedSchedule);
+       // if (selectedSchedule != null||time!=null) {
+            storeDataToDB();
+            navigateToScene(event, "Myfxmls/checkOut/checkOut.fxml");
+//        } else {
+//            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+//            alert.setTitle("Error");
+//            alert.setHeaderText(null);
+//            alert.setContentText("Please select a schedule");
+//            alert.showAndWait();
+//        }
+
     }
 
     private DoctorDataFetcher.Doctor doctor;
@@ -136,6 +153,7 @@ public class docDetailsController {
         ToggleButton selectedButton = (ToggleButton) toggleGroup.getSelectedToggle();
         if (selectedButton != null) {
             selectedTime = selectedButton.getText();
+            this.time = selectedTime;
 
             // Determine the associated date
             if (selectedButton == time1_1 || selectedButton == time1_2) {
@@ -181,4 +199,6 @@ public class docDetailsController {
             throw new RuntimeException(e);
         }
     }
+
+
 }

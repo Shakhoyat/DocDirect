@@ -88,21 +88,21 @@ public class AboutController {
     private void handleMyCart(ActionEvent event) {
         navigateToScene(event, "Myfxmls/myCart/viewCart.fxml");
     }
+//
+//    @FXML
+//    private void initialize() {
+//        applyHoverEffect(btn_home);
+//        applyHoverEffect(btn_services);
+//        applyHoverEffect(btn_doctors);
+//        applyHoverEffect(btn_about);
+//        applyHoverEffect(btn_contact);
+//        applyHoverEffect(btn_bookAppointment);
+//        applyHoverEffect(btn_ourServices);
+//        applyHoverEffect(btn_mycart);
+//    }
 
-    @FXML
-    private void initialize() {
-        applyHoverEffect(btn_home);
-        applyHoverEffect(btn_services);
-        applyHoverEffect(btn_doctors);
-        applyHoverEffect(btn_about);
-        applyHoverEffect(btn_contact);
-        applyHoverEffect(btn_bookAppointment);
-        applyHoverEffect(btn_ourServices);
-        applyHoverEffect(btn_mycart);
-    }
-
-    private void applyHoverEffect(Button button) {
-        button.setOnMouseEntered(event -> button.setStyle("-fx-background-color: #FFFFFF; -fx-text-fill: #EC407A; -fx-font-weight: bold; -fx-background-radius: 20;"));
-        button.setOnMouseExited(event -> button.setStyle("-fx-background-color: #EC407A; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 20;"));
-    }
+//    private void applyHoverEffect(Button button) {
+//        button.setOnMouseEntered(event -> button.setStyle("-fx-background-color: #FFFFFF; -fx-text-fill: #EC407A; -fx-font-weight: bold; -fx-background-radius: 20;"));
+//        button.setOnMouseExited(event -> button.setStyle("-fx-background-color: #EC407A; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 20;"));
+//    }
 }
