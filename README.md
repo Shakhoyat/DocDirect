@@ -18,6 +18,8 @@
 ✅ **User Authentication**: Secure login system for personalized access.  
 ✅ **Database Integration**: Efficient **MySQL database** for managing doctor details, appointments, and transactions.
 
+
+
 ---
 
 ## 🛠️ Technologies Used
