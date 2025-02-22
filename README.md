@@ -28,7 +28,10 @@
 🔹 **MySQL** - Robust database management  
 🔹 **Java** - Powerful backend logic  
 🔹 **IntelliJ IDEA Ultimate** - Primary development environment  
-🔹 **Git & GitHub** - Version control and collaboration
+🔹 **Git & GitHub** - Version control and collaboration 
+
+🔹 **Json Parsing** - For keeping the doctors details and their schedules 
+
 
 ---
 
@@ -46,7 +49,7 @@ http://nayeemcode.pythonanywhere.com/data?file=sujon&key=jhbfhsdjdjsadbjsd
 
 - Clone this repository:
    ```sh
-   git clone https://github.com/yourusername/DocDirect.git
+   git clone https://github.com/Shakhoyat/DocDirect.git
    ```
 - Open the project in **IntelliJ IDEA Ultimate**.
 
