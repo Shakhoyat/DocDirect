@@ -269,7 +269,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 👨‍💻 Developer
 
-**Shakhoyat Hossain**
+**Shakhoyat Rahman**
 - 📧 Email: [skt104.shujon@gmail.com](mailto:skt104.shujon@gmail.com)
 - 🔗 GitHub: [@Shakhoyat](https://github.com/Shakhoyat)
 - 💼 LinkedIn: [Connect with me](https://linkedin.com/in/your-profile)
